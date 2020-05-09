@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'fc-header',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  public introductionPhrase = 'Fan Cooking';
+  @HostBinding('class.fc-header') componentClass = true;
+
+  public title = `Jordan BORDONADO's personal website`;
 }

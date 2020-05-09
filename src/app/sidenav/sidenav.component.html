@@ -1,0 +1,22 @@
+<mat-sidenav-container>
+  <mat-sidenav #drawer mode="side" opened role="navigation" color="accent">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/profile"
+        ><mat-icon matListIcon>account_box</mat-icon>Profile</a
+      >
+      <a mat-list-item routerLink="/experiences"
+        ><mat-icon matListIcon>list</mat-icon>Experiences</a
+      >
+      <a mat-list-item routerLink="/skills"
+        ><mat-icon matListIcon>pan_tool</mat-icon>Skills</a
+      >
+      <a mat-list-item routerLink="/contact"
+        ><mat-icon matListIcon>perm_contact_calendar</mat-icon>Contact</a
+      >
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="fc-sidenav__content">
+    <fc-introduction></fc-introduction>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

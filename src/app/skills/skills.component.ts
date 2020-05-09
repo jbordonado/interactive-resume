@@ -1,0 +1,10 @@
+import { Component, HostBinding } from '@angular/core';
+
+@Component({
+  selector: 'fc-skills',
+  templateUrl: './skills.component.html',
+  styleUrls: ['./skills.component.scss'],
+})
+export class SkillsComponent {
+  @HostBinding('class.fc-skills') componentClass = true;
+}
