@@ -11,7 +11,6 @@ import { AppComponent } from './app.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
-import { IntroductionComponent } from './introduction/introduction.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { SkillsComponent } from './skills/skills.component';
@@ -23,7 +22,6 @@ import { SkillsComponent } from './skills/skills.component';
     ProfileComponent,
     ExperiencesComponent,
     SkillsComponent,
-    IntroductionComponent,
     SidenavComponent,
     FooterComponent,
   ],
