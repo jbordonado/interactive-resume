@@ -1,10 +1,8 @@
-import { Component, HostBinding } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'fc-sidenav',
   templateUrl: './sidenav.component.html',
   styleUrls: ['./sidenav.component.scss'],
 })
-export class SidenavComponent {
-  @HostBinding('class.fc-sidenav') componentClass = true;
-}
+export class SidenavComponent {}
