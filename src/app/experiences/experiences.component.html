@@ -1,18 +1,7 @@
 <h2>Here's what I've done so far</h2>
 
 <ng-container *ngIf="experiences$ | async as experiences">
-  <div *ngFor="let exp of experiences" class="fc-experiences__item">
-    <img
-      width="200px"
-      height="180px"
-      src="assets/{{ exp.companyLogo }}"
-      class="fc-experiences__item__image"
-    />
-    <div class="fc-experiences__item__description">
-      <span>{{ exp.companyName }}</span>
-      <span>{{ exp.jobTitle }}</span>
-      <span>{{ exp.location }}</span>
-      <p>{{ exp.description }}</p>
-    </div>
+  <div class="fc-experiences__item">
+    <fc-experience *ngFor="let exp of experiences" [exp]="exp"></fc-experience>
   </div>
 </ng-container>

@@ -3,5 +3,5 @@ export interface Experience {
   companyLogo: string;
   jobTitle: string;
   location: string;
-  description: string;
+  description: string[];
 }

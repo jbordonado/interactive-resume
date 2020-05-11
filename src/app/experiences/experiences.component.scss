@@ -1,15 +1,6 @@
 .fc-experiences {
   &__item {
     display: flex;
-
-    &__image {
-      padding: 8px;
-    }
-
-    &__description {
-      display: flex;
-      flex-direction: column;
-      padding: 8px;
-    }
+    flex-direction: column;
   }
 }

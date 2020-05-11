@@ -14,6 +14,7 @@ import { HeaderComponent } from './header/header.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ExperienceComponent } from './experiences/experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { SkillsComponent } from './skills/skills.component';
     SkillsComponent,
     SidenavComponent,
     FooterComponent,
+    ExperienceComponent,
   ],
   imports: [
     BrowserModule,

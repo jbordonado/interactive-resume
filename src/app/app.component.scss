@@ -27,3 +27,21 @@ p {
 
 @media screen and (max-width: 575px) {
 }
+
+$footer-height: 60px;
+
+#container {
+  min-height: 100%;
+  position: relative;
+}
+
+#body {
+  padding-bottom: $footer-height;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
+}

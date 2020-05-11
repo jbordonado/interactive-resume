@@ -1,0 +1,20 @@
+:host {
+  display: flex;
+}
+
+.fc-experience {
+  &__image {
+    padding: 8px;
+    border-radius: 15%;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+
+    &__description {
+      margin-top: 16px;
+    }
+  }
+}
