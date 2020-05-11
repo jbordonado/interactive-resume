@@ -15,6 +15,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ExperienceComponent } from './experiences/experience/experience.component';
+import { EducationComponent } from './education/education.component';
+import { MiscellaneousComponent } from './miscellaneous/miscellaneous.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { ExperienceComponent } from './experiences/experience/experience.compone
     SidenavComponent,
     FooterComponent,
     ExperienceComponent,
+    EducationComponent,
+    MiscellaneousComponent,
   ],
   imports: [
     BrowserModule,

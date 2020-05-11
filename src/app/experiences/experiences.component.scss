@@ -1,6 +1,10 @@
 .fc-experiences {
-  &__item {
+  &__content {
     display: flex;
     flex-direction: column;
+
+    &__item {
+      margin-bottom: 16px;
+    }
   }
 }

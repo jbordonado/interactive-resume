@@ -1,7 +1,11 @@
 <h2>Here's what I've done so far</h2>
 
 <ng-container *ngIf="experiences$ | async as experiences">
-  <div class="fc-experiences__item">
-    <fc-experience *ngFor="let exp of experiences" [exp]="exp"></fc-experience>
+  <div class="fc-experiences__content">
+    <fc-experience
+      *ngFor="let exp of experiences"
+      [exp]="exp"
+      class="fc-experiences__content__item"
+    ></fc-experience>
   </div>
 </ng-container>

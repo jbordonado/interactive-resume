@@ -1,14 +1,10 @@
-<img
-  width="200px"
-  height="180px"
-  src="assets/{{ exp.companyLogo }}"
-  class="fc-experience__image"
-/>
+<div class="fc-experience__image">
+  <img width="100px" height="50px" src="assets/{{ exp.companyLogo }}" />
+</div>
 <div class="fc-experience__details">
   <strong>{{ exp.companyName }}</strong>
-  <span>{{ exp.jobTitle }}</span>
-  <span>{{ exp.location }}</span>
-  <br />
+  <i>{{ exp.jobTitle }}</i>
+  <small>{{ exp.location }}</small>
   <div class="fc-experience__details__description">
     <p *ngFor="let desc of exp.description">{{ desc }}</p>
   </div>

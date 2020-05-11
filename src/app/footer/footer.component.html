@@ -1,27 +1,29 @@
 <footer class="fc-footer">
-  <h2>Contact</h2>
-  <div class="fc-footer__contact-items">
-    <a href="mailTo:jordan.bordonad@gmail.com" aria-label="Mail link">
-      <mat-icon matListIcon>email</mat-icon>
-    </a>
-    <a
-      target="_blank"
-      href="https://www.linkedin.com/in/jbordonado"
-      aria-label="Linkedin link"
-    >
-      <img width="24px" src="assets/linkedin.png" matListIcon />
-    </a>
-    <a
-      target="_blank"
-      href="https://github.com/Aigloun"
-      aria-label="Github link"
-    >
-      <img width="24px" src="assets/github-mark.png" matListIcon />
-    </a>
+  <div class="fc-footer__content">
+    <h2>Contact</h2>
+    <div class="fc-footer__content__contact-items">
+      <a href="mailTo:jordan.bordonado@gmail.com" aria-label="Mail link">
+        <img width="24px" src="assets/gmail-icon.png" />
+      </a>
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/jbordonado"
+        aria-label="Linkedin link"
+      >
+        <img width="24px" src="assets/linkedin.png" matListIcon />
+      </a>
+      <a
+        target="_blank"
+        href="https://github.com/Aigloun"
+        aria-label="Github link"
+      >
+        <img width="24px" src="assets/github-mark.png" matListIcon />
+      </a>
+    </div>
+    <small class="fc-footer__content__copyright">
+      <span class="fc-footer__content__copyright__name">Jordan Bordonado</span>
+      <mat-icon>copyright</mat-icon>
+      <span>{{ copyrightDate }}</span>
+    </small>
   </div>
-  <small class="fc-footer__copyright">
-    <span class="fc-footer__copyright__name">Jordan Bordonado</span>
-    <mat-icon>copyright</mat-icon>
-    <span>{{ copyrightDate }}</span>
-  </small>
 </footer>
