@@ -1,15 +1,18 @@
 <mat-sidenav-container class="fc-sidenav">
   <mat-sidenav #drawer [mode]="'side'" opened role="navigation">
-    <mat-nav-list>
-      <a mat-list-item routerLink="/profile"
-        ><mat-icon matListIcon>perm_identity</mat-icon>Profile</a
-      >
-      <a mat-list-item routerLink="/experiences"
-        ><mat-icon matListIcon>work_outline</mat-icon>Experiences</a
-      >
-      <a mat-list-item routerLink="/skills"
-        ><mat-icon matListIcon>star_outline</mat-icon>Skills</a
-      >
+    <mat-nav-list class="fc-sidenav__links">
+      <a mat-list-item routerLink="/profile">
+        <mat-icon matListIcon>perm_identity</mat-icon
+        ><span class="fc-sidenav__links__text">Profile</span>
+      </a>
+      <a mat-list-item routerLink="/experiences">
+        <mat-icon matListIcon>work_outline</mat-icon>
+        <span class="fc-sidenav__links__text">Experiences</span>
+      </a>
+      <a mat-list-item routerLink="/skills">
+        <mat-icon matListIcon>star_outline</mat-icon>
+        <span class="fc-sidenav__links__text">Skills</span>
+      </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content class="fc-sidenav__content">
