@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { CareerService } from './career.service';
-import { Experience } from './experience.model';
+import { WorkExperience } from '../shared/experience.model';
+import { ExperienceService } from '../shared/experience.service';
 
 @Component({
   selector: 'fc-career',
@@ -9,11 +9,11 @@ import { Experience } from './experience.model';
   styleUrls: ['./career.component.scss'],
 })
 export class CareerComponent implements OnInit {
-  public experiences$: Observable<Experience[]>;
+  public experiences$: Observable<WorkExperience[]>;
 
-  constructor(private careerService: CareerService) {}
+  constructor(private experienceService: ExperienceService) {}
 
   ngOnInit(): void {
-    this.experiences$ = this.careerService.getWorkExperiences();
+    this.experiences$ = this.experienceService.getWorkExperiences();
   }
 }

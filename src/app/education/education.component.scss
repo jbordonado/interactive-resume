@@ -1,0 +1,30 @@
+@import 'variables';
+
+.fc-education {
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+      display: flex;
+      margin-bottom: 16px;
+
+      &__image {
+        flex-shrink: 0;
+        margin-right: 16px;
+        img {
+          object-fit: contain;
+        }
+      }
+
+      &__details {
+        display: flex;
+        flex-direction: column;
+
+        &__description {
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+}

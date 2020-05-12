@@ -1,6 +1,36 @@
-import { Experience } from './experience.model';
+import { SchoolExperience, WorkExperience } from './experience.model';
 
-export const WORK_EXPERIENCES: Experience[] = [
+export const SCHOOL_EXPERIENCES: SchoolExperience[] = [
+  {
+    schoolName: 'Polytech Nice Sophia',
+    schoolLogo: 'polytech-logo.jpg',
+    major: "Diplôme d'Ingénieur, Mathématiques Appliquées et Modélisation",
+    startDate: '2011',
+    endDate: '2016',
+    description: [
+      "Spécialité Informatique et Mathématiques Appliquées à la Finance et l'Assurance.",
+      "On y découvre la finance de marché et on y approfondit les concepts et outils mathématiques nécessaires à la conception et à la réalisation de systèmes d'information financiers.",
+    ],
+  },
+  {
+    schoolName: 'DTU (Technical University of Denmark)',
+    schoolLogo: 'dtu-logo.png',
+    major: 'Diplôme de Master, Mathématiques Appliquées et Modélisation',
+    startDate: '2014',
+    endDate: '2015',
+    description: ["Semestre d'échange au Danemark."],
+  },
+  {
+    schoolName: 'Lycée Guillaume Apollinaire',
+    schoolLogo: 'apollinaire-logo.png',
+    major: 'Baccalauréat Scientifique, Option SVT',
+    startDate: '2008',
+    endDate: '2011',
+    description: [],
+  },
+];
+
+export const WORK_EXPERIENCES: WorkExperience[] = [
   {
     companyName: 'Air France',
     companyLogo: 'af-logo.png',
