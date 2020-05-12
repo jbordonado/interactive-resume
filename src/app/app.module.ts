@@ -8,22 +8,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ExperiencesComponent } from './experiences/experiences.component';
+import { CareerComponent } from './career/career.component';
+import { ExperienceComponent } from './career/experience/experience.component';
+import { EducationComponent } from './education/education.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { MiscellaneousComponent } from './miscellaneous/miscellaneous.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { SkillsComponent } from './skills/skills.component';
-import { ExperienceComponent } from './experiences/experience/experience.component';
-import { EducationComponent } from './education/education.component';
-import { MiscellaneousComponent } from './miscellaneous/miscellaneous.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ProfileComponent,
-    ExperiencesComponent,
+    CareerComponent,
     SkillsComponent,
     SidenavComponent,
     FooterComponent,

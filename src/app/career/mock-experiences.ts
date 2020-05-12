@@ -1,6 +1,6 @@
 import { Experience } from './experience.model';
 
-export const EXPERIENCES: Experience[] = [
+export const WORK_EXPERIENCES: Experience[] = [
   {
     companyName: 'Air France',
     companyLogo: 'af-logo.png',
