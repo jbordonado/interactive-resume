@@ -5,6 +5,9 @@
   background-color: initial;
 
   &__links {
+    &__icon {
+      padding: 4px;
+    }
     &__text {
       margin: 0 4px;
     }

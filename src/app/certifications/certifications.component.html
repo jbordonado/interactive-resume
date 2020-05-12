@@ -1,0 +1,25 @@
+<h2>Here's what I achieved so far</h2>
+
+<ng-container *ngIf="certificates$ | async as certificates">
+  <div class="fc-certifications__content">
+    <div
+      *ngFor="let cert of certificates"
+      class="fc-certifications__content__item"
+    >
+      <div class="fc-certifications__content__item__image">
+        <img
+          width="100px"
+          height="50px"
+          src="assets/{{ cert.authorityLogo }}"
+        />
+      </div>
+      <div class="fc-certifications__content__item__details">
+        <a target="_blank" href="{{ cert.link }}"
+          ><strong>{{ cert.name }}</strong></a
+        >
+        <i>{{ cert.authorityName }}</i>
+        <small>{{ cert.issuingDate }}</small>
+      </div>
+    </div>
+  </div>
+</ng-container>

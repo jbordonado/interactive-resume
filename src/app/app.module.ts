@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -10,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CareerComponent } from './career/career.component';
 import { ExperienceComponent } from './career/experience/experience.component';
+import { CertificationsComponent } from './certifications/certifications.component';
 import { EducationComponent } from './education/education.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
@@ -22,14 +24,15 @@ import { SkillsComponent } from './skills/skills.component';
   declarations: [
     AppComponent,
     HeaderComponent,
+    SidenavComponent,
     ProfileComponent,
     CareerComponent,
+    CertificationsComponent,
     SkillsComponent,
-    SidenavComponent,
-    FooterComponent,
     ExperienceComponent,
     EducationComponent,
     MiscellaneousComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +43,7 @@ import { SkillsComponent } from './skills/skills.component';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
