@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "fan-cooking": {
+    "interactive-resume": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/fan-cooking",
+            "outputPath": "dist/interactive-resume",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "fan-cooking:build"
+            "browserTarget": "interactive-resume:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "fan-cooking:build:production"
+              "browserTarget": "interactive-resume:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "fan-cooking:build"
+            "browserTarget": "interactive-resume:build"
           }
         },
         "test": {
@@ -114,16 +114,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "fan-cooking:serve"
+            "devServerTarget": "interactive-resume:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "fan-cooking:serve:production"
+              "devServerTarget": "interactive-resume:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "fan-cooking"
+  "defaultProject": "interactive-resume"
 }
