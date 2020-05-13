@@ -19,6 +19,7 @@ import { MiscellaneousComponent } from './miscellaneous/miscellaneous.component'
 import { ProfileComponent } from './profile/profile.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ResumeComponent } from './resume/resume.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { SkillsComponent } from './skills/skills.component';
     EducationComponent,
     MiscellaneousComponent,
     FooterComponent,
+    ResumeComponent,
   ],
   imports: [
     BrowserModule,

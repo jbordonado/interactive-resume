@@ -5,9 +5,11 @@ import { CertificationsComponent } from './certifications/certifications.compone
 import { EducationComponent } from './education/education.component';
 import { MiscellaneousComponent } from './miscellaneous/miscellaneous.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ResumeComponent } from './resume/resume.component';
 import { SkillsComponent } from './skills/skills.component';
 
 const routes: Routes = [
+  { path: '', component: ResumeComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'education', component: EducationComponent },
   { path: 'career', component: CareerComponent },
