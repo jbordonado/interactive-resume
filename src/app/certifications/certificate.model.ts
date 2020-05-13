@@ -3,5 +3,5 @@ export interface Certificate {
   authorityName: string;
   authorityLogo: string;
   issuingDate: string;
-  link: string;
+  link?: string;
 }

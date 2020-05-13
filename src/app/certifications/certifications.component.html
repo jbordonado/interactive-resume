@@ -14,9 +14,12 @@
         />
       </div>
       <div class="jb-certifications__content__item__details">
-        <a target="_blank" href="{{ cert.link }}"
+        <a *ngIf="cert.link; else noLink" target="_blank" href="{{ cert.link }}"
           ><strong>{{ cert.name }}</strong></a
         >
+        <ng-template #noLink>
+          <strong>{{ cert.name }}</strong>
+        </ng-template>
         <i>{{ cert.authorityName }}</i>
         <small>{{ cert.issuingDate }}</small>
       </div>

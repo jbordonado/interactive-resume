@@ -49,4 +49,10 @@ export const CERTIFICATES: Certificate[] = [
     link:
       'https://www.youracclaim.com/badges/a9419792-83e6-4a4a-834b-5fc4663325d6/linked_in_profile',
   },
+  {
+    name: 'Test of English for International Communication (TOEIC)',
+    authorityLogo: 'polytech-logo.jpg',
+    authorityName: "Polytech'Nice Sophia",
+    issuingDate: '2015 / 06',
+  },
 ];
