@@ -4,21 +4,20 @@ export const SCHOOL_EXPERIENCES: SchoolExperience[] = [
   {
     schoolName: 'Polytech Nice Sophia',
     schoolLogo: 'polytech-logo.jpg',
-    major: "Diplôme d'Ingénieur, Mathématiques Appliquées et Modélisation",
+    major: 'Engineer in Applied Mathematics and Modelling',
     startDate: '2011',
     endDate: '2016',
     description: [
-      "Spécialité Informatique et Mathématiques Appliquées à la Finance et l'Assurance.",
-      "On y découvre la finance de marché et on y approfondit les concepts et outils mathématiques nécessaires à la conception et à la réalisation de systèmes d'information financiers.",
+      'Specialized in mathematics and computer science applied to finance.',
     ],
   },
   {
-    schoolName: 'DTU (Technical University of Denmark)',
+    schoolName: 'Technical University of Denmark',
     schoolLogo: 'dtu-logo.png',
-    major: 'Diplôme de Master, Mathématiques Appliquées et Modélisation',
+    major: "Master's degree in Applied Mathematics and Modelling",
     startDate: '2014',
     endDate: '2015',
-    description: ["Semestre d'échange au Danemark."],
+    description: ['Exchange semester in Denmark.'],
   },
   {
     schoolName: 'Lycée Guillaume Apollinaire',
@@ -26,7 +25,9 @@ export const SCHOOL_EXPERIENCES: SchoolExperience[] = [
     major: 'Baccalauréat Scientifique, Option SVT',
     startDate: '2008',
     endDate: '2011',
-    description: [],
+    description: [
+      'Scientific subjects, equivalent to British “A” Levels or American High School Diploma.',
+    ],
   },
 ];
 
