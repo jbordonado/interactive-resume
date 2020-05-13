@@ -4,7 +4,7 @@ import { SchoolExperience } from '../shared/experience.model';
 import { ExperienceService } from '../shared/experience.service';
 
 @Component({
-  selector: 'fc-education',
+  selector: 'jb-education',
   templateUrl: './education.component.html',
   styleUrls: ['./education.component.scss'],
 })

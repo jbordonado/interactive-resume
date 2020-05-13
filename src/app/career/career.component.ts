@@ -4,7 +4,7 @@ import { WorkExperience } from '../shared/experience.model';
 import { ExperienceService } from '../shared/experience.service';
 
 @Component({
-  selector: 'fc-career',
+  selector: 'jb-career',
   templateUrl: './career.component.html',
   styleUrls: ['./career.component.scss'],
 })

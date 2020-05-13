@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'fc-skills',
+  selector: 'jb-skills',
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss'],
 })

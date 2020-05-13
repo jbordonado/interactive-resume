@@ -4,7 +4,7 @@ import { Certificate } from './certificate.model';
 import { CertificationService } from './certification.service';
 
 @Component({
-  selector: 'fc-certifications',
+  selector: 'jb-certifications',
   templateUrl: './certifications.component.html',
   styleUrls: ['./certifications.component.scss'],
 })
