@@ -1,32 +1,35 @@
 <mat-sidenav-container class="jb-sidenav">
   <mat-sidenav [mode]="'side'" opened role="navigation">
-    <mat-nav-list class="jb-sidenav__links">
+    <mat-nav-list class="jb-sidenav__nav-links">
       <a mat-list-item [routerLink]="'/profile'">
         <mat-icon matListIcon>perm_identity</mat-icon
-        ><span class="jb-sidenav__links__text">Profile</span>
+        ><span class="jb-sidenav__nav-links__text">Profile</span>
       </a>
       <a mat-list-item [routerLink]="'/education'">
-        <img class="jb-sidenav__links__icon" src="assets/school_outline.svg" />
-        <span class="jb-sidenav__links__text">Education</span>
+        <img
+          class="jb-sidenav__nav-links__icon"
+          src="assets/school_outline.svg"
+        />
+        <span class="jb-sidenav__nav-links__text">Education</span>
       </a>
       <a mat-list-item [routerLink]="'/career'">
         <mat-icon matListIcon>work_outline</mat-icon>
-        <span class="jb-sidenav__links__text">Career</span>
+        <span class="jb-sidenav__nav-links__text">Career</span>
       </a>
       <a mat-list-item [routerLink]="'/certifications'">
         <img
-          class="jb-sidenav__links__icon"
+          class="jb-sidenav__nav-links__icon"
           src="assets/certificate_outline.svg"
         />
-        <span class="jb-sidenav__links__text">Certifications</span>
+        <span class="jb-sidenav__nav-links__text">Certifications</span>
       </a>
       <a mat-list-item [routerLink]="'/skills'">
         <mat-icon matListIcon>star_outline</mat-icon>
-        <span class="jb-sidenav__links__text">Skills</span>
+        <span class="jb-sidenav__nav-links__text">Skills</span>
       </a>
       <a mat-list-item [routerLink]="'/miscellaneous'">
         <mat-icon matListIcon>more_vert</mat-icon>
-        <span class="jb-sidenav__links__text">Miscellaneous</span>
+        <span class="jb-sidenav__nav-links__text">Miscellaneous</span>
       </a>
     </mat-nav-list>
   </mat-sidenav>

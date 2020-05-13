@@ -1,0 +1,21 @@
+.jb-profile {
+  &__content {
+    display: flex;
+
+    img {
+      border-radius: 50%;
+    }
+
+    &__details {
+      margin-left: 16px;
+    }
+
+    &__summary {
+      margin-top: 16px;
+      p {
+        margin: 0;
+        line-height: 1.6;
+      }
+    }
+  }
+}
