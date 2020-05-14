@@ -35,8 +35,9 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
   {
     companyName: 'Air France',
     companyLogo: 'af-logo.png',
-    jobTitle: 'Software developer',
+    jobTitle: 'Fullstack developer',
     location: 'Sophia Antipolis (France)',
+    startDate: '2019/07',
     description: [
       'Developer for DISCUSS team as part of BlueWeb project, that manages the development and maintenance of the new Air France - KLM website, using SAFe methodology.',
       'Development of flows for disruption management, such as : claim creation & follow my claim, flight status, missing baggage declaration',
@@ -47,8 +48,10 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
   {
     companyName: 'Air France',
     companyLogo: 'af-logo.png',
-    jobTitle: 'Software developer',
+    jobTitle: 'Front-end developer',
     location: 'Sophia Antipolis (France)',
+    startDate: '2018/09',
+    endDate: '2019/06',
     description: [
       'Developer for BMW team as part of B2C project, that manages the development and maintenance of Air France booking website, using SAFe methodology.',
       'Development of booking flows for the mobile website : mobile.airfrance.fr',
@@ -59,8 +62,10 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
   {
     companyName: 'Air France',
     companyLogo: 'af-logo.png',
-    jobTitle: 'Software developer',
+    jobTitle: 'Front-end developer',
     location: 'Sophia Antipolis (France)',
+    startDate: '2017/01',
+    endDate: '2018/09',
     description: [
       'Contractor developer for eSales UI team as part of B2C project, that manages the development and maintenance of Air France booking website, using SAFe methodology.',
       'Development of booking flows for the desktop website : www.airfrance.fr',
@@ -72,8 +77,10 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
   {
     companyName: 'Amadeus',
     companyLogo: 'amadeus-logo.png',
-    jobTitle: 'Software developer',
+    jobTitle: 'Fullstack developer',
     location: 'Villeneuve-Loubet (France)',
+    startDate: '2015/09',
+    endDate: '2016/09',
     description: [
       'As an apprentice at Amadeus for the eRetail implementation team during one year, my role was the construction of an Internet Booking Engine prototype for airlines, consuming the eRetail XML API :',
       "It consists in a website in which the user can make a standard booking flow (search criterias, flights availability, flights selection, ancillaries, passengers' information, payment). It also provides explanations and details on how to realise such application through the free access to behind-the-scenes elements of each page such as the type of web service called, the files exchanged and SOAP requests made, logs etc...",
@@ -89,6 +96,8 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
     companyLogo: 'inria-logo.svg',
     jobTitle: 'Math/Developer intern',
     location: 'Sophia-Antipolis (France)',
+    startDate: '2015/07',
+    endDate: '2015/08',
     description: [
       'As an intern at INRIA during two months, my goal is to study the Cucker-Smale mathematical model, based on the construction and analysis of a generic flocking model.',
       '- Model analysis : scientific articles describing the application fields and the parameters',
@@ -100,6 +109,8 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
     companyLogo: 'veolia-logo.jpg',
     jobTitle: 'Developer intern',
     location: 'Saint-Laurent-du-Var (France)',
+    startDate: '2014/06',
+    endDate: '2014/07',
     description: [
       'As an intern at Veolia, my main goal is the creation of dynamic word forms that could reduce the time spent and increase the efficacity during the completion of these forms (more or less 40 pages / form).',
       '- Analysis : two field mission with an agent to understand the key points of improvements and have a global view of the current limitations',

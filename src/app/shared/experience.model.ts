@@ -12,5 +12,7 @@ export interface WorkExperience {
   companyLogo: string;
   jobTitle: string;
   location: string;
+  startDate: string;
+  endDate?: string;
   description: string[];
 }

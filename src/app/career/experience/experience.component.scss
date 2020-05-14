@@ -1,20 +1,27 @@
 @import 'variables';
 
-:host {
-  display: flex;
-}
-
 .jb-experience {
   &__header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 24px;
 
-    &__image {
-      flex-shrink: 0;
-      margin-right: 32px;
-      object-fit: contain;
+    &__left {
+      &__image {
+        flex-shrink: 0;
+        margin-right: 32px;
+        object-fit: contain;
+      }
+
+      &__dates {
+        padding: 4px 0;
+        > hr {
+          display: inline-block;
+          width: 50px;
+          vertical-align: middle;
+          margin: 0 8px;
+        }
+      }
     }
   }
 

@@ -1,23 +1,23 @@
 .jb-profile {
+  &__spinner {
+    margin: 64px auto 0;
+  }
+
   &__card {
     &__header {
       display: flex;
       justify-content: space-between;
       margin-bottom: 24px;
 
-      &__left {
+      &__main {
         display: flex;
-
-        &__text {
-          margin-left: 16px;
-        }
-
-        &__title {
-          margin-bottom: 12px;
-        }
 
         &__image {
           border-radius: 50%;
+        }
+
+        &__text {
+          margin-left: 16px;
         }
       }
     }

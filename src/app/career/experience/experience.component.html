@@ -1,11 +1,21 @@
 <mat-card>
   <div class="jb-experience__header">
-    <img
-      width="100px"
-      height="30px"
-      src="assets/{{ exp.companyLogo }}"
-      class="jb-experience__header__image"
-    />
+    <div class="jb-experience__header__left">
+      <img
+        width="100px"
+        height="30px"
+        src="assets/{{ exp.companyLogo }}"
+        class="jb-experience__header__left__image"
+      />
+      <div class="jb-experience__header__left__dates">
+        <span>{{ exp.startDate }}</span>
+        <hr />
+        <span *ngIf="exp.endDate; else endDateNow">{{ exp.endDate }}</span>
+        <ng-template #endDateNow>
+          <span>Now</span>
+        </ng-template>
+      </div>
+    </div>
     <strong>{{ exp.jobTitle }}</strong>
     <span>{{ exp.location }}</span>
   </div>
