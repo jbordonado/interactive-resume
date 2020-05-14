@@ -1,25 +1,27 @@
-<h2>Brief information about me</h2>
+<h1>Brief information about me</h1>
 
-<div class="jb-profile__content">
-  <img width="200px" height="200px" src="assets/jordan.jpg" />
-  <div class="jb-profile__content__details">
-    <div>
-      <strong>Name: </strong>
-      <span>Jordan BORDONADO</span>
+<mat-card class="jb-profile__card">
+  <div class="jb-profile__card__header">
+    <div class="jb-profile__card__header__left">
+      <img
+        mat-card-sm-image
+        src="assets/jordan.jpg"
+        class="jb-profile__card__header__left__image"
+      />
+      <div class="jb-profile__card__header__left__text">
+        <mat-card-title>Jordan BORDONADO</mat-card-title>
+        <mat-card-subtitle
+          >Fullstack Developer (+3 years experience)</mat-card-subtitle
+        >
+      </div>
     </div>
-    <div>
-      <strong>Age: </strong>
-      <span>26 years old</span>
+    <div class="jb-profile__card__header__right">
+      <div>26 years old</div>
+      <div>Antibes (France)</div>
     </div>
+  </div>
+  <mat-card-content>
     <div>
-      <strong>Location: </strong>
-      <span>Antibes (France)</span>
-    </div>
-    <div>
-      <strong>Experience: </strong>
-      <span>+3 years</span>
-    </div>
-    <div class="jb-profile__content__summary">
       <p>
         Overall I'm an experienced developer and I understand very well business
         needs to deliver high quality items.
@@ -35,5 +37,31 @@
         knowledge.
       </p>
     </div>
-  </div>
-</div>
+  </mat-card-content>
+  <mat-card-actions class="jb-profile__card__actions">
+    <strong> Contact info:</strong>
+    <a
+      mat-button
+      href="mailTo:jordan.bordonado@gmail.com"
+      color="accent"
+      aria-label="Email link"
+      >EMAIL</a
+    >
+    <a
+      mat-button
+      href="https://www.linkedin.com/in/jbordonado"
+      target="_blank"
+      color="accent"
+      aria-label="Linkedin link"
+      >LINKEDIN</a
+    >
+    <a
+      mat-button
+      href="https://github.com/Aigloun"
+      target="_blank"
+      color="accent"
+      aria-label="GitHub link"
+      >GitHub</a
+    >
+  </mat-card-actions>
+</mat-card>

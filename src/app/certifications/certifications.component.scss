@@ -7,19 +7,25 @@
 
     &__item {
       display: flex;
+      justify-content: space-between;
       margin-bottom: 16px;
-
-      &__image {
-        flex-shrink: 0;
-        margin-right: 16px;
-        img {
-          object-fit: contain;
-        }
-      }
 
       &__details {
         display: flex;
-        flex-direction: column;
+
+        &__image {
+          flex-shrink: 0;
+          margin-right: 16px;
+          padding-top: 6px;
+          img {
+            object-fit: contain;
+          }
+        }
+      }
+
+      &__link {
+        width: max-content;
+        padding: 0;
       }
     }
   }

@@ -86,7 +86,7 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
   },
   {
     companyName: 'Inria',
-    companyLogo: 'inria-logo.jpg',
+    companyLogo: 'inria-logo.svg',
     jobTitle: 'Math/Developer intern',
     location: 'Sophia-Antipolis (France)',
     description: [

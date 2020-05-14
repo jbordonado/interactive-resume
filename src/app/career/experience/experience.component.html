@@ -1,11 +1,15 @@
-<div class="jb-experience__image">
-  <img width="100px" height="50px" src="assets/{{ exp.companyLogo }}" />
-</div>
-<div class="jb-experience__details">
-  <strong>{{ exp.companyName }}</strong>
-  <i>{{ exp.jobTitle }}</i>
-  <small>{{ exp.location }}</small>
-  <div class="jb-experience__details__description">
+<mat-card>
+  <div class="jb-experience__header">
+    <img
+      width="100px"
+      height="30px"
+      src="assets/{{ exp.companyLogo }}"
+      class="jb-experience__header__image"
+    />
+    <strong>{{ exp.jobTitle }}</strong>
+    <span>{{ exp.location }}</span>
+  </div>
+  <div class="jb-experience__content">
     <p *ngFor="let desc of exp.description">{{ desc }}</p>
   </div>
-</div>
+</mat-card>

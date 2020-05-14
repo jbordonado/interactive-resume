@@ -1,21 +1,29 @@
 .jb-profile {
-  &__content {
-    display: flex;
+  &__card {
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 24px;
 
-    img {
-      border-radius: 50%;
-    }
+      &__left {
+        display: flex;
 
-    &__details {
-      margin-left: 16px;
-    }
+        &__text {
+          margin-left: 16px;
+        }
 
-    &__summary {
-      margin-top: 16px;
-      p {
-        margin: 0;
-        line-height: 1.6;
+        &__title {
+          margin-bottom: 12px;
+        }
+
+        &__image {
+          border-radius: 50%;
+        }
       }
+    }
+
+    &__actions {
+      margin-left: 0;
     }
   }
 }

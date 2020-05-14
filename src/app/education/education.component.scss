@@ -11,7 +11,8 @@
 
       &__image {
         flex-shrink: 0;
-        margin-right: 16px;
+        margin-right: 32px;
+        padding-top: 8px;
         img {
           object-fit: contain;
         }
