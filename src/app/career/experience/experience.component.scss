@@ -15,11 +15,31 @@
 
       &__dates {
         padding: 4px 0;
+
+        > * {
+          vertical-align: middle;
+        }
+
+        > :first-child {
+          margin-right: 4px;
+        }
+
+        > :last-child {
+          margin-left: 4px;
+        }
+
+        &__dot {
+          height: 8px;
+          width: 8px;
+          border: 1px solid mat-color($accent);
+          border-radius: 50%;
+          display: inline-block;
+        }
         > hr {
           display: inline-block;
-          width: 50px;
-          vertical-align: middle;
-          margin: 0 8px;
+          color: mat-color($accent);
+          border: 1px solid;
+          width: 40px;
         }
       }
     }

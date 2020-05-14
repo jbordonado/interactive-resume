@@ -2,8 +2,8 @@ export interface SchoolExperience {
   schoolName: string;
   schoolLogo: string;
   major: string;
-  startDate: string;
-  endDate: string;
+  startDate: Date;
+  endDate: Date;
   description: string[];
 }
 
@@ -12,7 +12,7 @@ export interface WorkExperience {
   companyLogo: string;
   jobTitle: string;
   location: string;
-  startDate: string;
-  endDate?: string;
+  startDate: Date;
+  endDate?: Date;
   description: string[];
 }

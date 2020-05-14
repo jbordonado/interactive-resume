@@ -8,9 +8,13 @@
         class="jb-experience__header__left__image"
       />
       <div class="jb-experience__header__left__dates">
-        <span>{{ exp.startDate }}</span>
+        <span>{{ exp.startDate | date: 'MMM yyyy' }}</span>
+        <span class="jb-experience__header__left__dates__dot"></span>
         <hr />
-        <span *ngIf="exp.endDate; else endDateNow">{{ exp.endDate }}</span>
+        <span class="jb-experience__header__left__dates__dot"></span>
+        <span *ngIf="exp.endDate; else endDateNow">{{
+          exp.endDate | date: 'MMM yyyy'
+        }}</span>
         <ng-template #endDateNow>
           <span>Now</span>
         </ng-template>
