@@ -2,9 +2,10 @@ export interface Profile {
   firstname: string;
   lastname: string;
   birthDate: Date;
+  image: string;
   location: Location;
+  contactDetails: Contact[];
   description: string[];
-  contacts: Contact[];
 }
 
 export interface Location {
@@ -13,6 +14,7 @@ export interface Location {
 }
 
 export interface Contact {
-  name: string;
-  href: string;
+  touchpoint: string;
+  link: string;
+  image: string;
 }

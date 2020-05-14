@@ -12,17 +12,15 @@
     <div class="jb-profile__card__header__main">
       <img
         mat-card-sm-image
-        src="assets/jordan.jpg"
+        src="{{ profile.image }}"
         class="jb-profile__card__header__main__image"
       />
       <div class="jb-profile__card__header__main__text">
         <mat-card-title
-          >{{ profile.firstname }} {{ profile.lastname }}</mat-card-title
+          >{{ profile.firstname }}
+          {{ profile.lastname | uppercase }}</mat-card-title
         >
-        <mat-card-subtitle
-          >{{ currentJobTitle }} (+ {{ workingYears }} years
-          experience)</mat-card-subtitle
-        >
+        <mat-card-subtitle>{{ subTitle }}</mat-card-subtitle>
       </div>
     </div>
     <div>
@@ -37,9 +35,9 @@
   </mat-card-content>
   <mat-card-actions class="jb-profile__card__actions">
     <strong> Contact details:</strong>
-    <ng-container *ngFor="let contact of profile.contacts">
-      <a mat-button href="{{ contact.href }}" color="accent">
-        {{ contact.name | uppercase }}
+    <ng-container *ngFor="let contact of profile.contactDetails">
+      <a mat-button href="{{ contact.link }}" color="accent">
+        {{ contact.touchpoint | uppercase }}
       </a>
     </ng-container>
   </mat-card-actions>

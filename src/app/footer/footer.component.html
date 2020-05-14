@@ -1,27 +1,18 @@
 <footer class="jb-footer">
-  <div class="jb-footer__content">
-    <h2>Contact</h2>
-    <div class="jb-footer__content__contact-items">
-      <a href="mailTo:jordan.bordonado@gmail.com" aria-label="Mail link">
-        <img width="24px" src="assets/gmail-icon.png" />
-      </a>
+  <div *ngIf="profile$ | async as profile" class="jb-footer__container">
+    <h1 class="jb-footer__container__title">Contact</h1>
+    <div class="jb-footer__container__contact">
       <a
-        target="_blank"
-        href="https://www.linkedin.com/in/jbordonado"
-        aria-label="Linkedin link"
+        *ngFor="let contact of profile.contactDetails"
+        href="{{ contact.link }}"
       >
-        <img width="24px" src="assets/linkedin.png" matListIcon />
-      </a>
-      <a
-        target="_blank"
-        href="https://github.com/Aigloun"
-        aria-label="Github link"
-      >
-        <img width="24px" src="assets/github-mark.png" matListIcon />
+        <img width="24px" src="{{ contact.image }}" />
       </a>
     </div>
-    <small class="jb-footer__content__copyright">
-      <span class="jb-footer__content__copyright__name">Jordan Bordonado</span>
+    <small class="jb-footer__container__copyright">
+      <span class="jb-footer__container__copyright__name"
+        >{{ profile.firstname }} {{ profile.lastname | uppercase }}</span
+      >
       <mat-icon>copyright</mat-icon>
       <span>{{ copyrightDate }}</span>
     </small>

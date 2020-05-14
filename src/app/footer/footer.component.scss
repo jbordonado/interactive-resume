@@ -2,19 +2,23 @@
 
 .jb-footer {
   background: mat-color($footer-color);
-  &__content {
+  &__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
     margin: auto;
 
-    &__contact-items {
+    &__title {
+      margin-top: 8px;
+    }
+
+    &__contact {
       display: flex;
       align-items: center;
       margin-bottom: 8px;
 
-      a {
+      > a {
         margin: 0 8px;
       }
     }

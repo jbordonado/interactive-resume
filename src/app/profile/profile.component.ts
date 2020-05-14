@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { first } from 'rxjs/operators';
-import { Profile } from './profile.model';
-import { ProfileService } from './profile.service';
+import { Profile } from '../shared/profile.model';
+import { ProfileService } from '../shared/profile.service';
 
 @Component({
   selector: 'jb-profile',
@@ -10,9 +10,8 @@ import { ProfileService } from './profile.service';
 })
 export class ProfileComponent implements OnInit {
   public profile: Profile;
+  public subTitle: string;
   public age: number;
-  public currentJobTitle: string;
-  public workingYears: number;
 
   constructor(private profileService: ProfileService) {}
 
@@ -24,8 +23,8 @@ export class ProfileComponent implements OnInit {
         this.profile = profile;
         this.age = this.calculateAge();
       });
-    this.currentJobTitle = 'Fullstack developer';
-    this.workingYears = 3;
+
+    this.subTitle = this.createSubTitle();
   }
 
   private calculateAge(): number {
@@ -35,5 +34,11 @@ export class ProfileComponent implements OnInit {
     const dayInMs = 1000 * 3600 * 24;
     const yearInMs = 365.25 * dayInMs;
     return Math.floor(timeDiffInMs / yearInMs);
+  }
+
+  private createSubTitle(): string {
+    const currentJobTitle = 'Fullstack developer';
+    const workingYears = 3;
+    return `${currentJobTitle} (+ ${workingYears} years experience)`;
   }
 }

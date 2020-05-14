@@ -4,10 +4,28 @@ export const PROFILE: Profile = {
   firstname: 'Jordan',
   lastname: 'Bordonado',
   birthDate: new Date(1993, 8, 27, 0, 0, 0, 0),
+  image: 'assets/jordan.jpg',
   location: {
     city: 'Antibes',
     country: 'France',
   },
+  contactDetails: [
+    {
+      touchpoint: 'Email',
+      link: 'mailTo:jordan.bordonado@gmail.com',
+      image: 'assets/gmail-icon.png',
+    },
+    {
+      touchpoint: 'LinkedIn',
+      link: 'https://www.linkedin.com/in/jbordonado',
+      image: 'assets/linkedin.png',
+    },
+    {
+      touchpoint: 'GitHub',
+      link: 'https://github.com/Aigloun',
+      image: 'assets/github-mark.png',
+    },
+  ],
   description: [
     `Overall I'm an experienced developer and I understand very well business
     needs to deliver high quality items.`,
@@ -17,19 +35,5 @@ export const PROFILE: Profile = {
     environment, I always make time to provide support or guidance to my
     colleagues and I love to have feedback on my work and try to expand my
     knowledge.`,
-  ],
-  contacts: [
-    {
-      name: 'Email',
-      href: 'mailTo:jordan.bordonado@gmail.com',
-    },
-    {
-      name: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/jbordonado',
-    },
-    {
-      name: 'GitHub',
-      href: 'https://github.com/Aigloun',
-    },
   ],
 };
