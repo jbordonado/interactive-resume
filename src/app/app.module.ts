@@ -8,6 +8,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
@@ -52,6 +53,7 @@ import { SkillsComponent } from './skills/skills.component';
     MatExpansionModule,
     MatProgressSpinnerModule,
     MatDividerModule,
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

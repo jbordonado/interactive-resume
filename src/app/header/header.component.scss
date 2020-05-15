@@ -4,11 +4,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
-    font-weight: 600;
 
-    &__img {
-      margin: 0 16px;
+    &__download {
+      transition: all 0.2s ease-in-out;
+
+      :hover {
+        transform: scale(1.5);
+      }
     }
   }
 }
