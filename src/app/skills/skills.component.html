@@ -1,24 +1,26 @@
-<h1>My skills</h1>
+<h1>An overview of my most important skills</h1>
 
-<h2>Hard skills</h2>
-<div class="jb-skills__hard-list">
-  <div>Javascript</div>
-  <div>Angular</div>
-  <div>Typescript</div>
-  <div>Apollo GraphQL</div>
-  <div>HTML</div>
-  <div>CSS / SASS</div>
-  <div>Java / J2EE</div>
-  <div>Scala</div>
-  <div>Angular</div>
-</div>
+<ng-template #loading>
+  <mat-spinner
+    [mode]="'indeterminate'"
+    class="jb-skills__spinner"
+  ></mat-spinner>
+</ng-template>
 
-<br />
+<p>
+  Generally speaking, I am eager to learn and I try to go deep on the various
+  topics I deal with. Besides, I always try to keep a positive attitude in a
+  team, which means positive feedback and support at any time.
+</p>
 
-<h2>Soft skills</h2>
-<div class="jb-skills__soft-list">
-  <div>Teamplayer</div>
-  <div>Communication</div>
-  <div>Support</div>
-  <div>Learn fast, work hard</div>
+<div
+  *ngIf="skills$ | async as skills; else loading"
+  class="jb-skills__categories"
+>
+  <mat-list *ngFor="let skill of skills" class="jb-skills__categories__list">
+    <div mat-subheader>{{ skill.category }}</div>
+    <mat-list-item *ngFor="let item of skill.items">
+      <div mat-line>{{ item }}</div>
+    </mat-list-item>
+  </mat-list>
 </div>
