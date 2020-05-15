@@ -14,7 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BonusComponent } from './bonus/bonus.component';
 import { CareerComponent } from './career/career.component';
-import { ExperienceComponent } from './career/experience/experience.component';
+import { WorkExperienceComponent } from './career/experience/work-experience.component';
 import { CertificateComponent } from './certifications/certificate/certificate.component';
 import { CertificationsComponent } from './certifications/certifications.component';
 import { EducationComponent } from './education/education.component';
@@ -35,7 +35,7 @@ import { SkillsComponent } from './skills/skills.component';
     CareerComponent,
     CertificationsComponent,
     SkillsComponent,
-    ExperienceComponent,
+    WorkExperienceComponent,
     EducationComponent,
     SchoolExperienceComponent,
     BonusComponent,

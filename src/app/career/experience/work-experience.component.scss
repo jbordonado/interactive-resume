@@ -1,19 +1,26 @@
 @import 'variables';
 
-.jb-experience {
+.jb-work-experience {
   &__header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 24px;
 
-    &__left {
-      &__image {
-        flex-shrink: 0;
-        margin-right: 32px;
-        object-fit: contain;
-      }
+    &__image {
+      margin-right: 32px;
+      object-fit: contain;
+    }
 
+    &__jobTitle {
+      color: mat-color($primary);
+    }
+  }
+
+  &__content {
+    margin-top: 16px;
+
+    &__summary {
       &__dates {
         padding: 4px 0;
 
@@ -42,18 +49,10 @@
           width: 40px;
         }
       }
-    }
 
-    &__jobTitle {
-      color: mat-color($primary);
-    }
-  }
-
-  &__content {
-    margin-top: 16px;
-
-    &__objective {
-      margin-bottom: 24px;
+      &__objective {
+        margin-bottom: 24px;
+      }
     }
 
     &__technologies {

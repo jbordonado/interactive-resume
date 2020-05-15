@@ -14,9 +14,9 @@
 </div>
 
 <div *ngIf="experiences$ | async as experiences" class="jb-career__experiences">
-  <jb-experience
+  <jb-work-experience
     *ngFor="let exp of experiences"
     [exp]="exp"
     class="jb-career__experiences__item"
-  ></jb-experience>
+  ></jb-work-experience>
 </div>
