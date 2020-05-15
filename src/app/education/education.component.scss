@@ -22,6 +22,10 @@
         display: flex;
         flex-direction: column;
 
+        &__major {
+          color: mat-color($primary);
+        }
+
         &__description {
           margin-top: 16px;
         }

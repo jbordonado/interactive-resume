@@ -20,10 +20,16 @@
         </ng-template>
       </div>
     </div>
-    <strong>{{ exp.jobTitle }}</strong>
+    <strong class="jb-experience__header__jobTitle">{{ exp.jobTitle }}</strong>
     <span>{{ exp.location }}</span>
   </div>
   <div class="jb-experience__content">
-    <p *ngFor="let desc of exp.description">{{ desc }}</p>
+    <div class="jb-experience__content__objective">
+      <strong>{{ exp.description.objective }}</strong>
+    </div>
+    <div *ngFor="let comment of exp.description.comments">{{ comment }}</div>
+    <div class="jb-experience__content__technologies">
+      <small>{{ exp.description.technologies.join(', ') }}</small>
+    </div>
   </div>
 </mat-card>

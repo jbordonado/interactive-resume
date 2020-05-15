@@ -14,5 +14,11 @@ export interface WorkExperience {
   location: string;
   startDate: Date;
   endDate?: Date;
-  description: string[];
+  description: Description;
+}
+
+export interface Description {
+  objective: string;
+  comments: string[];
+  technologies: string[];
 }

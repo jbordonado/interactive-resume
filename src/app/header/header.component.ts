@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'jb-header',
@@ -8,10 +7,4 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
   public title = `Jordan BORDONADO - Interactive resume`;
-
-  constructor(private router: Router) {}
-
-  public accessHome(): void {
-    this.router.navigate(['/']);
-  }
 }

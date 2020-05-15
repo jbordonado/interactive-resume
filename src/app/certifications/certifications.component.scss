@@ -1,3 +1,5 @@
+@import 'variables';
+
 .jb-certifications {
   &__content {
     display: flex;
@@ -18,6 +20,10 @@
           img {
             object-fit: contain;
           }
+        }
+
+        &__description__name {
+          color: mat-color($primary);
         }
       }
 

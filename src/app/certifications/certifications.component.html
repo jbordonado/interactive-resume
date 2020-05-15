@@ -18,11 +18,13 @@
           <div>
             <strong>{{ cert.authorityName }}</strong>
           </div>
-          <div>
-            <i>{{ cert.name }}</i>
+          <div
+            class="jb-certifications__content__item__details__description__name"
+          >
+            <strong>{{ cert.name }}</strong>
           </div>
           <div>
-            <small>{{ cert.issuingDate }}</small>
+            {{ cert.issuingDate | date: 'MMMM yyyy' }}
           </div>
         </div>
       </div>
@@ -31,7 +33,7 @@
         <a
           href="{{ cert.link }}"
           mat-button
-          color="accent"
+          color="primary"
           target="_blank"
           class="jb-certifications__content__item__link-item"
           >See certificate</a

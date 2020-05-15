@@ -11,7 +11,9 @@
       </div>
       <div class="jb-education__content__item__details">
         <strong>{{ exp.schoolName }}</strong>
-        <i>{{ exp.major }}</i>
+        <div class="jb-education__content__item__details__major">
+          <strong>{{ exp.major }}</strong>
+        </div>
         <div>
           {{ exp.startDate | date: 'yyyy' }} -
           {{ exp.endDate | date: 'yyyy' }}

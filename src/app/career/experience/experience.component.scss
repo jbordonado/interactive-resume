@@ -42,9 +42,21 @@
         }
       }
     }
+
+    &__jobTitle {
+      color: mat-color($primary);
+    }
   }
 
   &__content {
     margin-top: 16px;
+
+    &__objective {
+      margin-bottom: 24px;
+    }
+
+    &__technologies {
+      margin-top: 24px;
+    }
   }
 }

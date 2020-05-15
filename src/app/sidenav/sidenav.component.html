@@ -1,6 +1,13 @@
 <mat-sidenav-container class="jb-sidenav">
   <mat-sidenav [mode]="'side'" opened role="navigation">
     <mat-nav-list class="jb-sidenav__nav-links">
+      <a mat-list-item [routerLink]="'/'">
+        <img
+          class="jb-sidenav__nav-links__icon"
+          src="assets/home_outline.svg"
+        />
+        <span class="jb-sidenav__nav-links__text">Home</span>
+      </a>
       <a mat-list-item [routerLink]="'/profile'">
         <mat-icon matListIcon>perm_identity</mat-icon
         ><span class="jb-sidenav__nav-links__text">Profile</span>

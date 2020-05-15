@@ -39,6 +39,6 @@ export class ProfileComponent implements OnInit {
   private createSubTitle(): string {
     const currentJobTitle = 'Fullstack developer';
     const workingYears = 3;
-    return `${currentJobTitle} (+ ${workingYears} years experience)`;
+    return `${currentJobTitle} (+${workingYears} years experience)`;
   }
 }
