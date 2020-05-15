@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6af34008-7f77-4cfb-913e-1a21642b7eea/deploy-status)](https://app.netlify.com/sites/quizzical-shannon-80a708/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6af34008-7f77-4cfb-913e-1a21642b7eea/deploy-status)](https://app.netlify.com/sites/jordanbordonado/deploys)
 
 ## Development server
 
