@@ -1,4 +1,4 @@
-<mat-sidenav-container class="jb-sidenav">
+<mat-sidenav-container class="jb-sidenav" autosize>
   <mat-sidenav [mode]="'side'" opened role="navigation">
     <mat-nav-list class="jb-sidenav__nav-links">
       <a mat-list-item [routerLink]="'/'">
@@ -34,9 +34,9 @@
         <mat-icon matListIcon>star_outline</mat-icon>
         <span class="jb-sidenav__nav-links__text">Skills</span>
       </a>
-      <a mat-list-item [routerLink]="'/miscellaneous'">
-        <mat-icon matListIcon>more_vert</mat-icon>
-        <span class="jb-sidenav__nav-links__text">Miscellaneous</span>
+      <a mat-list-item [routerLink]="'/bonus'">
+        <mat-icon matListIcon>card_giftcard</mat-icon>
+        <span class="jb-sidenav__nav-links__text">Bonus</span>
       </a>
     </mat-nav-list>
   </mat-sidenav>

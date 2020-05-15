@@ -1,11 +1,22 @@
 <h1>My professional experiences so far</h1>
 
-<ng-container *ngIf="experiences$ | async as experiences">
-  <div class="jb-career__content">
-    <jb-experience
-      *ngFor="let exp of experiences"
-      [exp]="exp"
-      class="jb-career__content__item"
-    ></jb-experience>
-  </div>
-</ng-container>
+<div class="jb-career__introduction">
+  <p>
+    Since I graduated, I've only known Air France but this is truly a great
+    environment to improve and meet amazing people in an outstanding place
+    (Sophia-Antipolis is called the 'Small Silicon Valley').
+  </p>
+  <p>
+    I'm also glad I've had the chance to work at Amadeus just before, because
+    this is what gave me the confidence to continue on this path and especially
+    in the airline industry.
+  </p>
+</div>
+
+<div *ngIf="experiences$ | async as experiences" class="jb-career__experiences">
+  <jb-experience
+    *ngFor="let exp of experiences"
+    [exp]="exp"
+    class="jb-career__experiences__item"
+  ></jb-experience>
+</div>

@@ -18,7 +18,7 @@ export const PROFILE: Profile = {
     {
       touchpoint: 'LinkedIn',
       link: 'https://www.linkedin.com/in/jbordonado',
-      image: 'assets/linkedin.png',
+      image: 'assets/linkedin-logo.png',
     },
     {
       touchpoint: 'GitHub',
