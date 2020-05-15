@@ -1,6 +1,10 @@
 @import 'variables';
 
 .jb-work-experience {
+  &--bold {
+    font-weight: bold;
+  }
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -18,8 +22,6 @@
   }
 
   &__content {
-    margin-top: 16px;
-
     &__summary {
       &__dates {
         padding: 4px 0;

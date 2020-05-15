@@ -6,9 +6,9 @@
       src="assets/{{ exp.companyLogo }}"
       class="jb-work-experience__header__image"
     />
-    <strong class="jb-work-experience__header__jobTitle">{{
-      exp.jobTitle
-    }}</strong>
+    <div class="jb-work-experience__header__jobTitle jb-work-experience--bold">
+      {{ exp.jobTitle }}
+    </div>
     <span>{{ exp.location }}</span>
   </div>
   <div class="jb-work-experience__content">
@@ -25,8 +25,10 @@
           <span>Now</span>
         </ng-template>
       </div>
-      <div class="jb-work-experience__content__summary__objective">
-        <strong>{{ exp.description.objective }}</strong>
+      <div
+        class="jb-work-experience__content__summary__objective jb-work-experience--bold"
+      >
+        {{ exp.description.objective }}
       </div>
     </div>
     <div *ngFor="let comment of exp.description.comments">{{ comment }}</div>
