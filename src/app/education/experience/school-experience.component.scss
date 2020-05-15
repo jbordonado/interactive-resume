@@ -1,0 +1,32 @@
+@import 'variables';
+
+.jb-education-experience {
+  &__card {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+
+    &__image {
+      margin-right: 32px;
+      padding-top: 8px;
+      object-fit: contain;
+    }
+
+    &__details {
+      //  display: flex;
+      flex-direction: column;
+
+      &--bold {
+        font-weight: bold;
+      }
+
+      &__major {
+        color: mat-color($primary);
+      }
+
+      &__description {
+        margin-top: 16px;
+      }
+    }
+  }
+}

@@ -7,11 +7,13 @@
     margin-bottom: 8px;
     &__header {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       margin-bottom: 24px;
 
       &__main {
         display: flex;
+        flex-wrap: wrap;
 
         &__image {
           border-radius: 50%;

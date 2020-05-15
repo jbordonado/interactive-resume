@@ -1,36 +1,6 @@
-@import 'variables';
-
 .jb-certifications {
   &__content {
     display: flex;
     flex-direction: column;
-
-    &__item {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 16px;
-
-      &__details {
-        display: flex;
-
-        &__image {
-          flex-shrink: 0;
-          margin-right: 16px;
-          padding-top: 6px;
-          img {
-            object-fit: contain;
-          }
-        }
-
-        &__description__name {
-          color: mat-color($primary);
-        }
-      }
-
-      &__link {
-        width: max-content;
-        padding: 0;
-      }
-    }
   }
 }

@@ -12,42 +12,6 @@
   *ngIf="certificates$ | async as certificates"
   class="jb-certifications__content"
 >
-  <mat-card
-    *ngFor="let cert of certificates"
-    class="jb-certifications__content__item"
-  >
-    <div class="jb-certifications__content__item__details">
-      <div class="jb-certifications__content__item__details__image">
-        <img
-          width="100px"
-          height="50px"
-          src="assets/{{ cert.authorityLogo }}"
-        />
-      </div>
-      <div class="jb-certifications__content__item__details__description">
-        <div>
-          <strong>{{ cert.authorityName }}</strong>
-        </div>
-        <div
-          class="jb-certifications__content__item__details__description__name"
-        >
-          <strong>{{ cert.name }}</strong>
-        </div>
-        <div>
-          {{ cert.issuingDate | date: 'MMMM yyyy' }}
-        </div>
-      </div>
-    </div>
-
-    <div *ngIf="cert.link" class="jb-certifications__content__item__link">
-      <a
-        href="{{ cert.link }}"
-        mat-button
-        color="primary"
-        target="_blank"
-        class="jb-certifications__content__item__link-item"
-        >See certificate</a
-      >
-    </div>
-  </mat-card>
+  <jb-certificate *ngFor="let cert of certificates" [certificate]="cert">
+  </jb-certificate>
 </div>

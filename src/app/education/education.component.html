@@ -2,26 +2,7 @@
 
 <ng-container *ngIf="experiences$ | async as experiences">
   <div class="jb-education__content">
-    <mat-card
-      *ngFor="let exp of experiences"
-      class="jb-education__content__item"
-    >
-      <div class="jb-education__content__item__image">
-        <img width="100px" height="50px" src="assets/{{ exp.schoolLogo }}" />
-      </div>
-      <div class="jb-education__content__item__details">
-        <strong>{{ exp.schoolName }}</strong>
-        <div class="jb-education__content__item__details__major">
-          <strong>{{ exp.major }}</strong>
-        </div>
-        <div>
-          {{ exp.startDate | date: 'yyyy' }} -
-          {{ exp.endDate | date: 'yyyy' }}
-        </div>
-        <div class="jb-education__content__item__details__description">
-          <p *ngFor="let desc of exp.description">{{ desc }}</p>
-        </div>
-      </div>
-    </mat-card>
+    <jb-school-experience *ngFor="let exp of experiences" [experience]="exp">
+    </jb-school-experience>
   </div>
 </ng-container>

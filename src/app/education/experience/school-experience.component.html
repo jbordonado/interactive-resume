@@ -1,0 +1,25 @@
+<mat-card class="jb-education-experience__card">
+  <img
+    width="100px"
+    height="50px"
+    src="assets/{{ experience.schoolLogo }}"
+    class="jb-education-experience__card__image"
+  />
+  <div class="jb-education-experience__card__details">
+    <div class="jb-education-experience__card__details--bold">
+      {{ experience.schoolName }}
+    </div>
+    <div
+      class="jb-education-experience__card__details__major jb-education-experience__card__details--bold"
+    >
+      {{ experience.major }}
+    </div>
+    <div>
+      {{ experience.startDate | date: 'yyyy' }} -
+      {{ experience.endDate | date: 'yyyy' }}
+    </div>
+    <div class="jb-education-experience__card__details__description">
+      <p *ngFor="let desc of experience.description">{{ desc }}</p>
+    </div>
+  </div>
+</mat-card>

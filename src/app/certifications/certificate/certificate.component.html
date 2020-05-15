@@ -1,0 +1,27 @@
+<mat-card class="jb-certificate__card">
+  <div class="jb-certificate__card__content">
+    <img
+      width="100px"
+      height="50px"
+      src="assets/{{ certificate.authorityLogo }}"
+      class="jb-certificate__card__content__image"
+    />
+    <div class="jb-certificate__card__content__description">
+      <div class="jb-certificate__card__content__description--bold">
+        {{ certificate.authorityName }}
+      </div>
+      <div
+        class="jb-certificate__card__content__description__name jb-certificate__card__content__description--bold"
+      >
+        {{ certificate.name }}
+      </div>
+      <div>{{ certificate.issuingDate | date: 'MMMM yyyy' }}</div>
+    </div>
+  </div>
+
+  <div *ngIf="certificate.link" class="jb-certificate__card__link">
+    <a href="{{ certificate.link }}" mat-button color="primary" target="_blank"
+      >See certificate</a
+    >
+  </div>
+</mat-card>

@@ -1,0 +1,37 @@
+@import 'variables';
+
+.jb-certificate {
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+
+    &__content {
+      display: flex;
+      flex-wrap: wrap;
+
+      &__image {
+        margin-right: 16px;
+        padding-top: 6px;
+        object-fit: contain;
+      }
+
+      &__description {
+        &--bold {
+          font-weight: bold;
+        }
+
+        &__name {
+          color: mat-color($primary);
+        }
+      }
+    }
+
+    &__link {
+      > a {
+        padding: 0;
+      }
+    }
+  }
+}
