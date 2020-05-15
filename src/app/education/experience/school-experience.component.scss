@@ -3,7 +3,6 @@
 .jb-education-experience {
   &__card {
     display: flex;
-    flex-wrap: wrap;
     margin-bottom: 16px;
 
     &__image {
@@ -13,9 +12,6 @@
     }
 
     &__details {
-      //  display: flex;
-      flex-direction: column;
-
       &--bold {
         font-weight: bold;
       }
