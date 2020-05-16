@@ -1,5 +1,5 @@
 <mat-sidenav-container class="jb-sidenav" autosize>
-  <mat-sidenav [mode]="'side'" opened role="navigation">
+  <mat-sidenav [mode]="'side'" [opened]="isOpen" role="navigation">
     <mat-nav-list class="jb-sidenav__nav-links">
       <a mat-list-item [routerLink]="'/'">
         <img
@@ -40,7 +40,9 @@
       </a>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content class="jb-sidenav__content">
-    <router-outlet></router-outlet>
+  <mat-sidenav-content>
+    <div class="jb-sidenav__content">
+      <router-outlet></router-outlet>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

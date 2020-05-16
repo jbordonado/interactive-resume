@@ -5,12 +5,12 @@
     display: flex;
     margin-bottom: 16px;
 
-    @include small {
+    @include very-small {
       flex-direction: column;
     }
 
     &__image {
-      @include small {
+      @include very-small {
         margin-right: 0;
         margin-bottom: 16px;
         align-self: center;

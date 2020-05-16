@@ -32,6 +32,10 @@
       > a:hover {
         transform: scale(1.2);
       }
+
+      &__image {
+        max-width: 100%;
+      }
     }
 
     &__copyright {

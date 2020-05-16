@@ -1,9 +1,9 @@
 <div id="container">
   <div id="header">
-    <jb-header></jb-header>
+    <jb-header (menuButtonClick)="toggleSidebar()"></jb-header>
   </div>
   <div id="body">
-    <jb-sidenav></jb-sidenav>
+    <jb-sidenav [isOpen]="isSidebarOpen"></jb-sidenav>
   </div>
   <div id="footer">
     <jb-footer></jb-footer>

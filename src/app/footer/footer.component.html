@@ -6,7 +6,11 @@
         *ngFor="let contact of profile.contactDetails"
         href="{{ contact.link }}"
       >
-        <img width="64px" src="{{ contact.image }}" />
+        <img
+          width="64px"
+          src="{{ contact.image }}"
+          class="jb-footer__container__contact__image"
+        />
       </a>
     </div>
     <div class="jb-footer__container__copyright">

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'jb-header',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  public title = `Jordan BORDONADO - Interactive resume`;
+  @Output() menuButtonClick = new EventEmitter<boolean>();
+
+  public onClick(): void {
+    this.menuButtonClick.emit(true);
+  }
 }
