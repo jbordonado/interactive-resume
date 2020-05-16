@@ -9,6 +9,6 @@ export class HeaderComponent {
   @Output() menuButtonClick = new EventEmitter<boolean>();
 
   public onClick(): void {
-    this.menuButtonClick.emit(true);
+    this.menuButtonClick.emit();
   }
 }

@@ -1,40 +1,48 @@
-<mat-sidenav-container class="jb-sidenav" autosize>
-  <mat-sidenav [mode]="'side'" [opened]="isOpen" role="navigation">
+<mat-sidenav-container
+  (backdropClick)="closeSidenav()"
+  class="jb-sidenav"
+  autosize
+>
+  <mat-sidenav [mode]="'over'" [opened]="isOpen" role="navigation">
     <mat-nav-list class="jb-sidenav__nav-links">
-      <a mat-list-item [routerLink]="'/'">
+      <a mat-list-item (click)="closeSidenav()" [routerLink]="'/'">
         <img
           class="jb-sidenav__nav-links__icon"
           src="assets/home_outline.svg"
         />
         <span class="jb-sidenav__nav-links__text">Home</span>
       </a>
-      <a mat-list-item [routerLink]="'/profile'">
+      <a mat-list-item (click)="closeSidenav()" [routerLink]="'/profile'">
         <mat-icon matListIcon>perm_identity</mat-icon
         ><span class="jb-sidenav__nav-links__text">Profile</span>
       </a>
-      <a mat-list-item [routerLink]="'/education'">
+      <a mat-list-item (click)="closeSidenav()" [routerLink]="'/education'">
         <img
           class="jb-sidenav__nav-links__icon"
           src="assets/school_outline.svg"
         />
         <span class="jb-sidenav__nav-links__text">Education</span>
       </a>
-      <a mat-list-item [routerLink]="'/career'">
+      <a mat-list-item (click)="closeSidenav()" [routerLink]="'/career'">
         <mat-icon matListIcon>work_outline</mat-icon>
         <span class="jb-sidenav__nav-links__text">Career</span>
       </a>
-      <a mat-list-item [routerLink]="'/certifications'">
+      <a
+        mat-list-item
+        (click)="closeSidenav()"
+        [routerLink]="'/certifications'"
+      >
         <img
           class="jb-sidenav__nav-links__icon"
           src="assets/certificate_outline.svg"
         />
         <span class="jb-sidenav__nav-links__text">Certifications</span>
       </a>
-      <a mat-list-item [routerLink]="'/skills'">
+      <a mat-list-item (click)="closeSidenav()" [routerLink]="'/skills'">
         <mat-icon matListIcon>star_outline</mat-icon>
         <span class="jb-sidenav__nav-links__text">Skills</span>
       </a>
-      <a mat-list-item [routerLink]="'/bonus'">
+      <a mat-list-item (click)="closeSidenav()" [routerLink]="'/bonus'">
         <mat-icon matListIcon>card_giftcard</mat-icon>
         <span class="jb-sidenav__nav-links__text">Bonus</span>
       </a>

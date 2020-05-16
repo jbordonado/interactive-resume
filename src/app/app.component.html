@@ -3,7 +3,10 @@
     <jb-header (menuButtonClick)="toggleSidebar()"></jb-header>
   </div>
   <div id="body">
-    <jb-sidenav [isOpen]="isSidebarOpen"></jb-sidenav>
+    <jb-sidenav
+      [isSidebarOpen]="isSidebarOpen"
+      (sidenavToggle)="toggleSidebar()"
+    ></jb-sidenav>
   </div>
   <div id="footer">
     <jb-footer></jb-footer>
