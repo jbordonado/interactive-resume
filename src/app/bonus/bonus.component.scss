@@ -1,0 +1,12 @@
+@import 'variables';
+
+.jb-bonus {
+  &__list {
+    mat-list-item {
+      @include very-small {
+        height: initial;
+        padding-bottom: 8px;
+      }
+    }
+  }
+}
