@@ -14,6 +14,7 @@
     &__image {
       margin-right: 32px;
       object-fit: contain;
+      max-width: 100%;
     }
 
     &__jobTitle {
@@ -24,7 +25,15 @@
   &__content {
     &__summary {
       &__dates {
+        display: flex;
+        align-items: center;
         padding: 4px 0;
+
+        @include very-small {
+          flex-direction: column;
+          align-items: initial;
+          width: max-content;
+        }
 
         > * {
           vertical-align: middle;
@@ -38,17 +47,16 @@
           margin-left: 4px;
         }
 
-        &__dot {
-          height: 8px;
-          width: 8px;
-          border: 1px solid black;
-          border-radius: 50%;
-          display: inline-block;
-        }
-        > hr {
-          display: inline-block;
-          border: 1px solid black;
+        &__separator {
           width: 40px;
+          height: 2px;
+          background: black;
+
+          @include very-small {
+            transform: rotate(90deg);
+            margin: 20px 0;
+            align-self: center;
+          }
         }
       }
 

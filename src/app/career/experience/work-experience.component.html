@@ -15,9 +15,9 @@
     <div class="jb-work-experience__content__summary">
       <div class="jb-work-experience__content__summary__dates">
         <span>{{ exp.startDate | date: 'MMM yyyy' }}</span>
-        <span class="jb-work-experience__content__summary__dates__dot"></span>
-        <hr />
-        <span class="jb-work-experience__content__summary__dates__dot"></span>
+        <div
+          class="jb-work-experience__content__summary__dates__separator"
+        ></div>
         <span *ngIf="exp.endDate; else endDateNow">{{
           exp.endDate | date: 'MMM yyyy'
         }}</span>
