@@ -4,20 +4,31 @@
   &__card {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     margin-bottom: 16px;
+
+    @include very-small {
+      flex-direction: column;
+    }
 
     &__content {
       display: flex;
-      flex-wrap: wrap;
+
+      @include small {
+        flex-direction: column;
+      }
 
       &__image {
         margin-right: 16px;
         padding-top: 6px;
         object-fit: contain;
+        max-width: 100%;
       }
 
       &__description {
+        @include small {
+          margin-top: 8px;
+        }
+
         &--bold {
           font-weight: bold;
         }
@@ -29,6 +40,11 @@
     }
 
     &__link {
+      max-width: 100%;
+      @include very-small {
+        align-self: flex-end;
+        margin-top: 8px;
+      }
       > a {
         padding: 0;
       }
