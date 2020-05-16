@@ -1,9 +1,17 @@
+@import 'variables';
+
 .jb-header {
   &__toolbar {
     height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &__title {
+      @include very-small {
+        display: none;
+      }
+    }
 
     &__download {
       transition: all 0.2s ease-in-out;

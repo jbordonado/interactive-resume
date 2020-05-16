@@ -1,12 +1,15 @@
 <mat-toolbar color="primary" class="jb-header__toolbar" role="header">
   <button
     mat-icon-button
-    class="jb-app__header-menu__button"
+    matTooltip="Open navigation menu"
     (click)="onClick()"
+    aria-label="Open navigation menu"
   >
     <mat-icon>menu</mat-icon>
   </button>
-  <span>Jordan BORDONADO - Interactive resume</span>
+  <a mat-button class="jb-header__toolbar__title" routerLink="/">
+    <span>Jordan BORDONADO's interactive resume</span>
+  </a>
   <a
     mat-icon-button
     href="assets/CV-Jordan-Bordonado.pdf"
