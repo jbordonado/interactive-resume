@@ -31,7 +31,7 @@
 
         @include very-small {
           flex-direction: column;
-          align-items: initial;
+          align-items: center;
           width: max-content;
         }
 
@@ -44,6 +44,9 @@
         }
 
         > :last-child {
+          @include very-small {
+            margin-left: 0;
+          }
           margin-left: 4px;
         }
 
@@ -55,7 +58,6 @@
           @include very-small {
             transform: rotate(90deg);
             margin: 20px 0;
-            align-self: center;
           }
         }
       }
