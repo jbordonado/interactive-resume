@@ -5,7 +5,16 @@
     display: flex;
     margin-bottom: 16px;
 
+    @include small {
+      flex-direction: column;
+    }
+
     &__image {
+      @include small {
+        margin-right: 0;
+        margin-bottom: 16px;
+        align-self: center;
+      }
       margin-right: 32px;
       padding-top: 8px;
       object-fit: contain;

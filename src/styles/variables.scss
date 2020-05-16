@@ -9,3 +9,39 @@ $theme: mat-light-theme($primary, $accent, $warn);
 
 $sidenav-bg-color: mat-palette($mat-grey, 200);
 $footer-color: mat-palette($mat-grey, 100);
+
+// Define upper limit for a few targetted devices
+$mobile-width: 480px;
+$tablet-width: 768px;
+$laptop-width: 1024px;
+$desktop-width: 1200px;
+
+@mixin very-small {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (max-width: #{$laptop-width}) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (max-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin very-large {
+  @media (min-width: #{$desktop-width + 1px}) {
+    @content;
+  }
+}
