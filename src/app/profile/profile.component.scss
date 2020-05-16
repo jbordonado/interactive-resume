@@ -1,3 +1,5 @@
+@import 'variables';
+
 .jb-profile {
   &__spinner {
     margin: 64px auto 0;
@@ -16,10 +18,16 @@
         flex-wrap: wrap;
 
         &__image {
+          @include small {
+            margin: 8px auto;
+          }
           border-radius: 50%;
         }
 
         &__text {
+          @include small {
+            margin-left: 0;
+          }
           margin-left: 16px;
         }
       }
