@@ -35,6 +35,9 @@
 
       &__image {
         max-width: 100%;
+        @include very-small {
+          width: 32px;
+        }
       }
     }
 
@@ -46,6 +49,13 @@
       &__name {
         margin-right: 4px;
       }
+    }
+
+    &__scroll-button {
+      position: absolute;
+      top: 0;
+      right: 16px;
+      transform: rotate(-90deg) scale(1.5);
     }
   }
 }

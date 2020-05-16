@@ -1,8 +1,4 @@
-<mat-sidenav-container
-  (backdropClick)="closeSidenav()"
-  class="jb-sidenav"
-  autosize
->
+<mat-sidenav-container (backdropClick)="closeSidenav()" class="jb-sidenav">
   <mat-sidenav [mode]="'over'" [opened]="isOpen" role="navigation">
     <mat-nav-list class="jb-sidenav__nav-links">
       <a mat-list-item (click)="closeSidenav()" [routerLink]="'/'">
