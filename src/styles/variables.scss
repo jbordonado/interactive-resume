@@ -7,6 +7,7 @@ $warn: mat-palette($mat-red);
 
 $theme: mat-light-theme($primary, $accent, $warn);
 
+$toolbar-height: 60px;
 $sidenav-bg-color: mat-palette($mat-grey, 200);
 $footer-color: mat-palette($mat-grey, 100);
 

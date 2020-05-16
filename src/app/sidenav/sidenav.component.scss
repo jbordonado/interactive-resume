@@ -1,6 +1,7 @@
 @import 'variables';
 
 .jb-sidenav {
+  margin-top: $toolbar-height;
   min-height: 100vh;
   background-color: initial;
 
