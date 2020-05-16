@@ -34,7 +34,6 @@
     </p>
   </mat-card-content>
   <mat-card-actions class="jb-profile__card__actions">
-    <strong> Contact details:</strong>
     <ng-container *ngFor="let contact of profile.contactDetails">
       <a mat-button href="{{ contact.link }}" color="primary">
         {{ contact.touchpoint | uppercase }}
