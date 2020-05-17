@@ -16,6 +16,7 @@ const routes: Routes = [
   { path: 'certifications', component: CertificationsComponent },
   { path: 'skills', component: SkillsComponent },
   { path: 'bonus', component: BonusComponent },
+  { path: '**', redirectTo: '' },
 ];
 
 @NgModule({
