@@ -1,7 +1,5 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { of } from 'rxjs';
-import { PROFILE } from '../shared/mock-profiles';
 import { Profile } from '../shared/profile.model';
 import { ProfileService } from '../shared/profile.service';
 import { ProfileComponent } from './profile.component';
@@ -23,7 +21,7 @@ describe('ProfileComponent', () => {
   }));
 
   describe('ngOnInit', () => {
-    it('should define profile with the data from profile service, and then calculate the corresponding age', () => {
+    it('should define profile with the data from profile service, and then calculate the corresponding age and define the subtitle', () => {
       profileService = TestBed.inject(ProfileService);
       const birthDateFromThreeYearsAgo = new Date();
       birthDateFromThreeYearsAgo.setFullYear(
@@ -42,23 +40,15 @@ describe('ProfileComponent', () => {
         contactDetails: [],
         description: [],
       };
-      spyOn(profileService, 'getProfile').and.returnValue(of(fakeProfile));
+      spyOn(profileService, 'getProfile').and.returnValue(fakeProfile);
 
       fixture.detectChanges();
 
       expect(component.profile).toEqual(fakeProfile);
       expect(component.age).toBe(3);
+      expect(component.subTitle).toBe(
+        'Fullstack developer (+3 years experience)'
+      );
     });
-  });
-
-  it('should define subtitle', () => {
-    profileService = TestBed.inject(ProfileService);
-    spyOn(profileService, 'getProfile').and.returnValue(of(PROFILE));
-
-    fixture.detectChanges();
-
-    expect(component.subTitle).toBe(
-      'Fullstack developer (+3 years experience)'
-    );
   });
 });

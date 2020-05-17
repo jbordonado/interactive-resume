@@ -1,6 +1,5 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { of } from 'rxjs';
 import { CertificationService } from './certification.service';
 import { CertificationsComponent } from './certifications.component';
 import { CERTIFICATES } from './mock-certificates';
@@ -25,14 +24,12 @@ describe('CertificationsComponent', () => {
     it('should define certificates$ with certificates from certification service', () => {
       certificationService = TestBed.inject(CertificationService);
       spyOn(certificationService, 'getCertificates').and.returnValue(
-        of(CERTIFICATES.slice(0, 2))
+        CERTIFICATES.slice(0, 2)
       );
 
       fixture.detectChanges();
 
-      component.certificates$.subscribe((exp) =>
-        expect(exp).toEqual(CERTIFICATES.slice(0, 2))
-      );
+      expect(component.certificates).toEqual(CERTIFICATES.slice(0, 2));
     });
   });
 });

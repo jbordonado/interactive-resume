@@ -6,17 +6,7 @@
   team, which means positive feedback and support at any time.
 </p>
 
-<ng-template #loading>
-  <mat-spinner
-    [mode]="'indeterminate'"
-    class="jb-skills__spinner"
-  ></mat-spinner>
-</ng-template>
-
-<div
-  *ngIf="skills$ | async as skills; else loading"
-  class="jb-skills__categories"
->
+<div class="jb-skills__categories">
   <mat-list *ngFor="let skill of skills" class="jb-skills__categories__list">
     <div mat-subheader>{{ skill.category }}</div>
     <mat-list-item *ngFor="let item of skill.items">

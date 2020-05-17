@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
 import { SchoolExperience, WorkExperience } from './experience.model';
 import { SCHOOL_EXPERIENCES, WORK_EXPERIENCES } from './mock-experiences';
 
@@ -7,11 +6,11 @@ import { SCHOOL_EXPERIENCES, WORK_EXPERIENCES } from './mock-experiences';
   providedIn: 'root',
 })
 export class ExperienceService {
-  public getSchoolExperiences(): Observable<SchoolExperience[]> {
-    return of(SCHOOL_EXPERIENCES);
+  public getSchoolExperiences(): SchoolExperience[] {
+    return SCHOOL_EXPERIENCES;
   }
 
-  public getWorkExperiences(): Observable<WorkExperience[]> {
-    return of(WORK_EXPERIENCES);
+  public getWorkExperiences(): WorkExperience[] {
+    return WORK_EXPERIENCES;
   }
 }

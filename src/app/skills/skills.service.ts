@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
 import { SKILLS } from './mock-skills';
 import { Skills } from './skills.model';
 
@@ -7,7 +6,7 @@ import { Skills } from './skills.model';
   providedIn: 'root',
 })
 export class SkillsService {
-  public getSkills(): Observable<Skills[]> {
-    return of(SKILLS);
+  public getSkills(): Skills[] {
+    return SKILLS;
   }
 }

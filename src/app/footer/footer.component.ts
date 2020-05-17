@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
 import { Profile } from '../shared/profile.model';
 import { ProfileService } from '../shared/profile.service';
 import { ScrollService } from '../shared/scroll.service';
@@ -10,7 +9,7 @@ import { ScrollService } from '../shared/scroll.service';
   styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent implements OnInit {
-  public profile$: Observable<Profile>;
+  public profile: Profile;
   public copyrightDate = new Date().getFullYear();
 
   constructor(
@@ -19,7 +18,7 @@ export class FooterComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.profile$ = this.profileService.getProfile();
+    this.profile = this.profileService.getProfile();
   }
 
   public notifyScrollToTop(): void {

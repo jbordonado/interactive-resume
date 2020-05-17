@@ -12,21 +12,17 @@ describe('ExperienceService', () => {
 
   describe('getSchoolExperiences', () => {
     it('should return school experiences', () => {
-      const experiences$ = service.getSchoolExperiences();
+      const experiences = service.getSchoolExperiences();
 
-      experiences$.subscribe((experiences) =>
-        expect(experiences).toEqual(SCHOOL_EXPERIENCES)
-      );
+      expect(experiences).toEqual(SCHOOL_EXPERIENCES);
     });
   });
 
   describe('getWorkExperiences', () => {
     it('should return work experiences', () => {
-      const experiences$ = service.getWorkExperiences();
+      const experiences = service.getWorkExperiences();
 
-      experiences$.subscribe((experiences) =>
-        expect(experiences).toEqual(WORK_EXPERIENCES)
-      );
+      expect(experiences).toEqual(WORK_EXPERIENCES);
     });
   });
 });

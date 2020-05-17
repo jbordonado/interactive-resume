@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs';
 import { Certificate } from './certificate.model';
 import { CertificationService } from './certification.service';
 
@@ -9,11 +8,11 @@ import { CertificationService } from './certification.service';
   styleUrls: ['./certifications.component.scss'],
 })
 export class CertificationsComponent {
-  public certificates$: Observable<Certificate[]>;
+  public certificates: Certificate[];
 
   constructor(private certificationService: CertificationService) {}
 
   ngOnInit(): void {
-    this.certificates$ = this.certificationService.getCertificates();
+    this.certificates = this.certificationService.getCertificates();
   }
 }

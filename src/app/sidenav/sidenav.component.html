@@ -6,50 +6,33 @@
     role="navigation"
   >
     <mat-nav-list class="jb-sidenav__nav-links">
-      <a mat-list-item (click)="closeSidenav()" [routerLink]="'/'">
-        <img
-          class="jb-sidenav__nav-links__icon"
-          src="assets/home_outline.svg"
-        />
-        <span class="jb-sidenav__nav-links__text">Home</span>
-      </a>
-      <a mat-list-item (click)="closeSidenav()" [routerLink]="'/profile'">
-        <mat-icon matListIcon>perm_identity</mat-icon
-        ><span class="jb-sidenav__nav-links__text">Profile</span>
-      </a>
-      <a mat-list-item (click)="closeSidenav()" [routerLink]="'/education'">
-        <img
-          class="jb-sidenav__nav-links__icon"
-          src="assets/school_outline.svg"
-        />
-        <span class="jb-sidenav__nav-links__text">Education</span>
-      </a>
-      <a mat-list-item (click)="closeSidenav()" [routerLink]="'/career'">
-        <mat-icon matListIcon>work_outline</mat-icon>
-        <span class="jb-sidenav__nav-links__text">Career</span>
-      </a>
-      <a
-        mat-list-item
-        (click)="closeSidenav()"
-        [routerLink]="'/certifications'"
-      >
-        <img
-          class="jb-sidenav__nav-links__icon"
-          src="assets/certificate_outline.svg"
-        />
-        <span class="jb-sidenav__nav-links__text">Certifications</span>
-      </a>
-      <a mat-list-item (click)="closeSidenav()" [routerLink]="'/skills'">
-        <mat-icon matListIcon>star_outline</mat-icon>
-        <span class="jb-sidenav__nav-links__text">Skills</span>
-      </a>
-      <a mat-list-item (click)="closeSidenav()" [routerLink]="'/bonus'">
-        <mat-icon matListIcon>card_giftcard</mat-icon>
-        <span class="jb-sidenav__nav-links__text">Bonus</span>
-      </a>
+      <ng-container *ngFor="let navItem of navigationItems">
+        <a
+          *ngIf="isIcon(navItem); else imageNavItem"
+          mat-list-item
+          (click)="closeSidenav()"
+          [routerLink]="navItem.route"
+        >
+          <mat-icon matListIcon>{{ navItem.image.value }}</mat-icon
+          ><span class="jb-sidenav__nav-links__text">{{ navItem.name }}</span>
+        </a>
+        <ng-template #imageNavItem>
+          <a
+            mat-list-item
+            (click)="closeSidenav()"
+            [routerLink]="navItem.route"
+          >
+            <img
+              class="jb-sidenav__nav-links__icon"
+              src="{{ navItem.image.value }}"
+            />
+            <span class="jb-sidenav__nav-links__text">{{ navItem.name }}</span>
+          </a>
+        </ng-template>
+      </ng-container>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content>
+  <mat-sidenav-content role="main">
     <div class="jb-sidenav__content">
       <router-outlet></router-outlet>
     </div>

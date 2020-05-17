@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
 import { Certificate } from './certificate.model';
 import { CERTIFICATES } from './mock-certificates';
 
@@ -7,7 +6,7 @@ import { CERTIFICATES } from './mock-certificates';
   providedIn: 'root',
 })
 export class CertificationService {
-  public getCertificates(): Observable<Certificate[]> {
-    return of(CERTIFICATES);
+  public getCertificates(): Certificate[] {
+    return CERTIFICATES;
   }
 }

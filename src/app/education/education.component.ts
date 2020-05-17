@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
 import { SchoolExperience } from '../shared/experience.model';
 import { ExperienceService } from '../shared/experience.service';
 
@@ -9,11 +8,11 @@ import { ExperienceService } from '../shared/experience.service';
   styleUrls: ['./education.component.scss'],
 })
 export class EducationComponent implements OnInit {
-  public experiences$: Observable<SchoolExperience[]>;
+  public experiences: SchoolExperience[];
 
   constructor(private experienceService: ExperienceService) {}
 
   ngOnInit(): void {
-    this.experiences$ = this.experienceService.getSchoolExperiences();
+    this.experiences = this.experienceService.getSchoolExperiences();
   }
 }

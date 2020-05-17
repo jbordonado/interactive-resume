@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { first } from 'rxjs/operators';
 import { Profile } from '../shared/profile.model';
 import { ProfileService } from '../shared/profile.service';
 
@@ -16,14 +15,8 @@ export class ProfileComponent implements OnInit {
   constructor(private profileService: ProfileService) {}
 
   ngOnInit(): void {
-    this.profileService
-      .getProfile()
-      .pipe(first())
-      .subscribe((profile) => {
-        this.profile = profile;
-        this.age = this.calculateAge();
-      });
-
+    this.profile = this.profileService.getProfile();
+    this.age = this.calculateAge();
     this.subTitle = this.createSubTitle();
   }
 

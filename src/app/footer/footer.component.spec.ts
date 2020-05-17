@@ -1,6 +1,5 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { of } from 'rxjs';
 import { PROFILE } from '../shared/mock-profiles';
 import { ProfileService } from '../shared/profile.service';
 import { ScrollService } from '../shared/scroll.service';
@@ -26,13 +25,11 @@ describe('FooterComponent', () => {
   describe('ngOnInit', () => {
     it('should define profile$ with data from experience service', () => {
       profileService = TestBed.inject(ProfileService);
-      spyOn(profileService, 'getProfile').and.returnValue(of({ ...PROFILE }));
+      spyOn(profileService, 'getProfile').and.returnValue({ ...PROFILE });
 
       fixture.detectChanges();
 
-      component.profile$.subscribe((profile) =>
-        expect(profile).toEqual(PROFILE)
-      );
+      expect(component.profile).toEqual(PROFILE);
     });
   });
 

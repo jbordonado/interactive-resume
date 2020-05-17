@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs/internal/Observable';
 import { Skills } from './skills.model';
 import { SkillsService } from './skills.service';
 
@@ -9,11 +8,11 @@ import { SkillsService } from './skills.service';
   styleUrls: ['./skills.component.scss'],
 })
 export class SkillsComponent implements OnInit {
-  public skills$: Observable<Skills[]>;
+  public skills: Skills[];
 
   constructor(private skillsService: SkillsService) {}
 
   ngOnInit(): void {
-    this.skills$ = this.skillsService.getSkills();
+    this.skills = this.skillsService.getSkills();
   }
 }

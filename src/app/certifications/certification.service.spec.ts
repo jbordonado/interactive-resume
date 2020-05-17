@@ -12,11 +12,9 @@ describe('CertificationService', () => {
 
   describe('getCertificates', () => {
     it('should return certificates', () => {
-      const certificates$ = service.getCertificates();
+      const certificates = service.getCertificates();
 
-      certificates$.subscribe((certificates) =>
-        expect(certificates).toEqual(CERTIFICATES)
-      );
+      expect(certificates).toEqual(CERTIFICATES);
     });
   });
 });

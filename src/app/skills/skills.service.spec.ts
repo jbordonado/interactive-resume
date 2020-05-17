@@ -14,7 +14,7 @@ describe('SkillsService', () => {
     it('should return skills', () => {
       const skills = service.getSkills();
 
-      skills.subscribe((skills) => expect(skills).toEqual(SKILLS));
+      expect(skills).toEqual(SKILLS);
     });
   });
 });

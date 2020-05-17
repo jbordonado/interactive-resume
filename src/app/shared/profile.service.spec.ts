@@ -12,9 +12,9 @@ describe('ProfileService', () => {
 
   describe('getProfile', () => {
     it('should return school experiences', () => {
-      const profile$ = service.getProfile();
+      const profile = service.getProfile();
 
-      profile$.subscribe((profile) => expect(profile).toEqual(PROFILE));
+      expect(profile).toEqual(PROFILE);
     });
   });
 });

@@ -1,6 +1,5 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { of } from 'rxjs';
 import { ExperienceService } from '../shared/experience.service';
 import { SCHOOL_EXPERIENCES } from '../shared/mock-experiences';
 import { EducationComponent } from './education.component';
@@ -25,14 +24,12 @@ describe('EducationComponent', () => {
     it('should define experiences$ with school experiences from experience service', () => {
       experienceService = TestBed.inject(ExperienceService);
       spyOn(experienceService, 'getSchoolExperiences').and.returnValue(
-        of(SCHOOL_EXPERIENCES.slice(0, 2))
+        SCHOOL_EXPERIENCES.slice(0, 2)
       );
 
       fixture.detectChanges();
 
-      component.experiences$.subscribe((exp) =>
-        expect(exp).toEqual(SCHOOL_EXPERIENCES.slice(0, 2))
-      );
+      expect(component.experiences).toEqual(SCHOOL_EXPERIENCES.slice(0, 2));
     });
   });
 });
