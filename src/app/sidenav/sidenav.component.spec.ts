@@ -1,5 +1,5 @@
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { SidenavComponent } from './sidenav.component';
 
 describe('SidenavComponent', () => {
@@ -8,17 +8,31 @@ describe('SidenavComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
       declarations: [SidenavComponent],
     }).compileComponents();
-  }));
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(SidenavComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
+  }));
+
+  describe('ngOnChanges', () => {
+    it('should define isOpen with isSidebarOpen input', () => {
+      component.isSidebarOpen = true;
+
+      component.ngOnChanges({});
+
+      expect(component.isOpen).toBe(true);
+    });
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  describe('closeSidenav', () => {
+    it('should emit a sidenavToggle event', () => {
+      spyOn(component.sidenavToggle, 'emit');
+
+      component.closeSidenav();
+
+      expect(component.sidenavToggle.emit).toHaveBeenCalled();
+    });
   });
 });

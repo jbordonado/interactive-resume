@@ -1,24 +1,38 @@
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { of } from 'rxjs';
+import { ExperienceService } from '../shared/experience.service';
+import { SCHOOL_EXPERIENCES } from '../shared/mock-experiences';
 import { EducationComponent } from './education.component';
 
 describe('EducationComponent', () => {
   let component: EducationComponent;
   let fixture: ComponentFixture<EducationComponent>;
 
+  let experienceService: ExperienceService;
+
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
       declarations: [EducationComponent],
     }).compileComponents();
-  }));
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(EducationComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+  }));
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  describe('ngOnInit', () => {
+    it('should define experiences$ with school experiences from experience service', () => {
+      experienceService = TestBed.inject(ExperienceService);
+      spyOn(experienceService, 'getSchoolExperiences').and.returnValue(
+        of(SCHOOL_EXPERIENCES.slice(0, 2))
+      );
+
+      fixture.detectChanges();
+
+      component.experiences$.subscribe((exp) =>
+        expect(exp).toEqual(SCHOOL_EXPERIENCES.slice(0, 2))
+      );
+    });
   });
 });

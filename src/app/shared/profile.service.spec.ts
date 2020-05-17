@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-
+import { PROFILE } from './mock-profiles';
 import { ProfileService } from './profile.service';
 
 describe('ProfileService', () => {
@@ -10,7 +10,11 @@ describe('ProfileService', () => {
     service = TestBed.inject(ProfileService);
   });
 
-  it('should be created', () => {
-    expect(service).toBeTruthy();
+  describe('getProfile', () => {
+    it('should return school experiences', () => {
+      const profile$ = service.getProfile();
+
+      profile$.subscribe((profile) => expect(profile).toEqual(PROFILE));
+    });
   });
 });

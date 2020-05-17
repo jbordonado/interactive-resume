@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
-
 import { CertificationService } from './certification.service';
+import { CERTIFICATES } from './mock-certificates';
 
 describe('CertificationService', () => {
   let service: CertificationService;
@@ -10,7 +10,13 @@ describe('CertificationService', () => {
     service = TestBed.inject(CertificationService);
   });
 
-  it('should be created', () => {
-    expect(service).toBeTruthy();
+  describe('getCertificates', () => {
+    it('should return certificates', () => {
+      const certificates$ = service.getCertificates();
+
+      certificates$.subscribe((certificates) =>
+        expect(certificates).toEqual(CERTIFICATES)
+      );
+    });
   });
 });

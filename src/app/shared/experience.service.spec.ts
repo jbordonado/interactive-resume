@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
-
 import { ExperienceService } from './experience.service';
+import { SCHOOL_EXPERIENCES, WORK_EXPERIENCES } from './mock-experiences';
 
 describe('ExperienceService', () => {
   let service: ExperienceService;
@@ -10,7 +10,23 @@ describe('ExperienceService', () => {
     service = TestBed.inject(ExperienceService);
   });
 
-  it('should be created', () => {
-    expect(service).toBeTruthy();
+  describe('getSchoolExperiences', () => {
+    it('should return school experiences', () => {
+      const experiences$ = service.getSchoolExperiences();
+
+      experiences$.subscribe((experiences) =>
+        expect(experiences).toEqual(SCHOOL_EXPERIENCES)
+      );
+    });
+  });
+
+  describe('getWorkExperiences', () => {
+    it('should return work experiences', () => {
+      const experiences$ = service.getWorkExperiences();
+
+      experiences$.subscribe((experiences) =>
+        expect(experiences).toEqual(WORK_EXPERIENCES)
+      );
+    });
   });
 });
