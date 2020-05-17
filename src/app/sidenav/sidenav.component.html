@@ -10,7 +10,7 @@
         <a
           *ngIf="isIcon(navItem); else imageNavItem"
           mat-list-item
-          (click)="closeSidenav()"
+          (click)="onNavClick(navItem)"
           [routerLink]="navItem.route"
         >
           <mat-icon matListIcon>{{ navItem.image.value }}</mat-icon
@@ -19,7 +19,7 @@
         <ng-template #imageNavItem>
           <a
             mat-list-item
-            (click)="closeSidenav()"
+            (click)="onNavClick(navItem)"
             [routerLink]="navItem.route"
           >
             <img

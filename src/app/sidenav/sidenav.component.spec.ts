@@ -1,5 +1,6 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { Title } from '@angular/platform-browser';
 import { ScrollService } from '../shared/scroll.service';
 import { NAVIGATION_ITEMS } from './mock-navigation';
 import { NavigationItem } from './navigation.model';
@@ -11,6 +12,7 @@ describe('SidenavComponent', () => {
   let fixture: ComponentFixture<SidenavComponent>;
 
   let navigationService: NavigationService;
+  let titleService: Title;
   let scrollService: ScrollService;
 
   beforeEach(async(() => {
@@ -75,6 +77,27 @@ describe('SidenavComponent', () => {
       const isIcon = component.isIcon(imgNavItem);
 
       expect(isIcon).toBe(false);
+    });
+  });
+
+  describe('onNavClick', () => {
+    it(`should use title service to set a title using the navigation item's name`, () => {
+      titleService = TestBed.inject(Title);
+      spyOn(titleService, 'setTitle');
+      const navItem: NavigationItem = {
+        name: 'aNameRandom',
+        route: '/',
+        image: {
+          type: 'img',
+          value: 'assets/home_outline.svg',
+        },
+      };
+
+      component.onNavClick(navItem);
+
+      expect(titleService.setTitle).toHaveBeenCalledWith(
+        'Jordan BORDONADO interactive resume - aNameRandom'
+      );
     });
   });
 

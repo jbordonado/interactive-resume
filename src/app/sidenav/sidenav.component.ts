@@ -7,6 +7,7 @@ import {
   Output,
   SimpleChanges,
 } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { ScrollService } from '../shared/scroll.service';
 import { NavigationItem } from './navigation.model';
 import { NavigationService } from './navigation.service';
@@ -26,6 +27,7 @@ export class SidenavComponent implements OnInit, OnChanges {
 
   constructor(
     private navigationService: NavigationService,
+    private titleService: Title,
     private scrollService: ScrollService
   ) {}
 
@@ -40,6 +42,13 @@ export class SidenavComponent implements OnInit, OnChanges {
 
   public isIcon(navItem: NavigationItem): boolean {
     return navItem.image.type === 'icon';
+  }
+
+  public onNavClick(navItem: NavigationItem): void {
+    this.titleService.setTitle(
+      `Jordan BORDONADO interactive resume - ${navItem.name}`
+    );
+    this.closeSidenav();
   }
 
   public closeSidenav(): void {
