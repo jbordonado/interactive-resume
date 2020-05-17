@@ -17,4 +17,5 @@ export interface Contact {
   touchpoint: string;
   link: string;
   image: string;
+  ariaLabel: string;
 }

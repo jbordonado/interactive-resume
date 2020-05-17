@@ -14,16 +14,19 @@ export const PROFILE: Profile = {
       touchpoint: 'Email',
       link: 'mailTo:jordan.bordonado@gmail.com',
       image: 'assets/gmail-icon.png',
+      ariaLabel: `Jordan Bordonado Email`,
     },
     {
       touchpoint: 'LinkedIn',
       link: 'https://www.linkedin.com/in/jbordonado',
       image: 'assets/linkedin-logo.png',
+      ariaLabel: `Jordan Bordonado LinkedIn`,
     },
     {
       touchpoint: 'GitHub',
       link: 'https://github.com/Aigloun',
       image: 'assets/github-mark.png',
+      ariaLabel: `Jordan Bordonado GitHub`,
     },
   ],
   description: [
