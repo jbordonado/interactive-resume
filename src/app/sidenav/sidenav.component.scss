@@ -6,6 +6,7 @@
   background-color: initial;
 
   mat-sidenav {
+    margin-top: $toolbar-height;
     background-color: mat-color($sidenav-bg-color);
   }
 
