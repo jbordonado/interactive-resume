@@ -4,7 +4,7 @@ export const PROFILE: Profile = {
   firstname: 'Jordan',
   lastname: 'Bordonado',
   birthDate: new Date(1993, 8, 27, 0, 0, 0, 0),
-  image: 'assets/jordan.jpg',
+  image: 'assets/profile-logo.jpg',
   location: {
     city: 'Antibes',
     country: 'France',

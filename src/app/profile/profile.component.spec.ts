@@ -32,7 +32,7 @@ describe('ProfileComponent', () => {
         firstname: 'aFirstName',
         lastname: 'aLastName',
         birthDate: birthDateFromThreeYearsAgo,
-        image: 'assets/jordan.jpg',
+        image: 'assets/profile-logo.jpg',
         location: {
           city: 'Antibes',
           country: 'France',
