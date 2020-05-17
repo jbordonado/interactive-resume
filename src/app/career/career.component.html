@@ -13,7 +13,17 @@
   </p>
 </div>
 
-<div *ngIf="experiences$ | async as experiences" class="jb-career__experiences">
+<ng-template #loading>
+  <mat-spinner
+    [mode]="'indeterminate'"
+    class="jb-career__spinner"
+  ></mat-spinner>
+</ng-template>
+
+<div
+  *ngIf="experiences$ | async as experiences; else loading"
+  class="jb-career__experiences"
+>
   <jb-work-experience
     *ngFor="let exp of experiences"
     [exp]="exp"

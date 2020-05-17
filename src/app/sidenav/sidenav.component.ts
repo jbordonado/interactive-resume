@@ -6,7 +6,7 @@ import {
   Output,
   SimpleChanges,
 } from '@angular/core';
-import { Subject } from 'rxjs';
+import { ScrollService } from '../shared/scroll.service';
 
 @Component({
   selector: 'jb-sidenav',
@@ -20,7 +20,7 @@ export class SidenavComponent implements OnChanges {
 
   public isOpen: boolean;
 
-  private destroy$ = new Subject();
+  constructor(private scrollService: ScrollService) {}
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   ngOnChanges(_changes: SimpleChanges): void {
@@ -29,5 +29,6 @@ export class SidenavComponent implements OnChanges {
 
   public closeSidenav(): void {
     this.sidenavToggle.emit();
+    this.scrollService.scrollToTop();
   }
 }

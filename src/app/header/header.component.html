@@ -2,12 +2,12 @@
   <button
     mat-icon-button
     matTooltip="Open sidebar menu"
-    (click)="onClick()"
+    (click)="onMenuClick()"
     aria-label="Open sidebar menu"
   >
     <mat-icon>menu</mat-icon>
   </button>
-  <a mat-button routerLink="/">
+  <a mat-button routerLink="/" (click)="onTitleClick()">
     <h1>Interactive resume</h1>
   </a>
   <a

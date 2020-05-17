@@ -29,7 +29,8 @@
         transition: all 0.2s ease-in-out;
       }
 
-      > a:hover {
+      > a:hover,
+      a:focus {
         transform: scale(1.2);
       }
 

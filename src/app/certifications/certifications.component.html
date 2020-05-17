@@ -8,8 +8,15 @@
   concepts at my current company.
 </p>
 
+<ng-template #loading>
+  <mat-spinner
+    [mode]="'indeterminate'"
+    class="jb-certifications__spinner"
+  ></mat-spinner>
+</ng-template>
+
 <div
-  *ngIf="certificates$ | async as certificates"
+  *ngIf="certificates$ | async as certificates; else loading"
   class="jb-certifications__content"
 >
   <jb-certificate *ngFor="let cert of certificates" [certificate]="cert">

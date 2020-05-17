@@ -1,6 +1,13 @@
 <h1>My learning path</h1>
 
-<ng-container *ngIf="experiences$ | async as experiences">
+<ng-template #loading>
+  <mat-spinner
+    [mode]="'indeterminate'"
+    class="jb-education__spinner"
+  ></mat-spinner>
+</ng-template>
+
+<ng-container *ngIf="experiences$ | async as experiences; else loading">
   <div class="jb-education__content">
     <jb-school-experience *ngFor="let exp of experiences" [experience]="exp">
     </jb-school-experience>

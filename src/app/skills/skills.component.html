@@ -1,17 +1,17 @@
 <h1>An overview of my most important skills</h1>
 
+<p>
+  Generally speaking, I am eager to learn and I try to go deep on the various
+  topics I deal with. Besides, I always try to keep a positive attitude in a
+  team, which means positive feedback and support at any time.
+</p>
+
 <ng-template #loading>
   <mat-spinner
     [mode]="'indeterminate'"
     class="jb-skills__spinner"
   ></mat-spinner>
 </ng-template>
-
-<p>
-  Generally speaking, I am eager to learn and I try to go deep on the various
-  topics I deal with. Besides, I always try to keep a positive attitude in a
-  team, which means positive feedback and support at any time.
-</p>
 
 <div
   *ngIf="skills$ | async as skills; else loading"
