@@ -1,13 +1,6 @@
 <h1>Brief information about me</h1>
 
-<ng-template #loading>
-  <mat-spinner
-    [mode]="'indeterminate'"
-    class="jb-profile__spinner"
-  ></mat-spinner>
-</ng-template>
-
-<mat-card *ngIf="profile; else loading" class="jb-profile__card">
+<mat-card class="jb-profile__card">
   <div class="jb-profile__card__header">
     <div class="jb-profile__card__header__main">
       <img

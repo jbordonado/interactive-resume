@@ -1,25 +1,49 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { BonusComponent } from './bonus/bonus.component';
-import { CareerComponent } from './career/career.component';
-import { CertificationsComponent } from './certifications/certifications.component';
-import { EducationComponent } from './education/education.component';
-import { ProfileComponent } from './profile/profile.component';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { ResumeComponent } from './resume/resume.component';
-import { SkillsComponent } from './skills/skills.component';
 
 const routes: Routes = [
   { path: '', component: ResumeComponent },
-  { path: 'profile', component: ProfileComponent },
-  { path: 'education', component: EducationComponent },
-  { path: 'career', component: CareerComponent },
-  { path: 'certifications', component: CertificationsComponent },
-  { path: 'skills', component: SkillsComponent },
-  { path: 'bonus', component: BonusComponent },
+  {
+    path: 'profile',
+    loadChildren: () =>
+      import('./profile/profile.module').then((m) => m.ProfileModule),
+  },
+  {
+    path: 'education',
+    loadChildren: () =>
+      import('./education/education.module').then((m) => m.EducationModule),
+  },
+  {
+    path: 'career',
+    loadChildren: () =>
+      import('./career/career.module').then((m) => m.CareerModule),
+  },
+  {
+    path: 'certifications',
+    loadChildren: () =>
+      import('./certifications/certifications.module').then(
+        (m) => m.CertificationsModule
+      ),
+  },
+  {
+    path: 'skills',
+    loadChildren: () =>
+      import('./skills/skills.module').then((m) => m.SkillsModule),
+  },
+  {
+    path: 'bonus',
+    loadChildren: () =>
+      import('./bonus/bonus.module').then((m) => m.BonusModule),
+  },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, {
+      preloadingStrategy: PreloadAllModules,
+    }),
+  ],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
