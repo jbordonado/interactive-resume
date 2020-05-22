@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Profile } from '../shared/profile.model';
-import { ProfileService } from '../shared/profile.service';
-import { ScrollService } from '../shared/scroll.service';
+import { Profile } from '../interface/profile.model';
+import { ProfileService } from '../services/profile.service';
+import { ScrollService } from '../services/scroll.service';
 
 @Component({
   selector: 'jb-footer',

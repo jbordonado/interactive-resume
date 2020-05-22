@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { SchoolExperience } from 'src/app/shared/experience.model';
+import { SchoolExperience } from 'src/app/interface/experience.model';
 
 @Component({
   selector: 'jb-school-experience',

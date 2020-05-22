@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Certificate } from '../certificate.model';
+import { Certificate } from 'src/app/interface/certificate.model';
 
 @Component({
   selector: 'jb-certificate',

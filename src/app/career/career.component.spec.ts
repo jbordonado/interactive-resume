@@ -1,7 +1,7 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { ExperienceService } from '../shared/experience.service';
-import { WORK_EXPERIENCES } from '../shared/mock-experiences';
+import { WORK_EXPERIENCES } from '../app.constants';
+import { ExperienceService } from '../services/experience.service';
 import { CareerComponent } from './career.component';
 
 describe('CareerComponent', () => {

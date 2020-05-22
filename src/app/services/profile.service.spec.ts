@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import { PROFILE } from './mock-profiles';
+import { PROFILE } from '../app.constants';
 import { ProfileService } from './profile.service';
 
 describe('ProfileService', () => {

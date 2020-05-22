@@ -6,27 +6,27 @@
     role="navigation"
   >
     <mat-nav-list class="jb-sidenav__nav-links">
-      <ng-container *ngFor="let navItem of navigationItems">
+      <ng-container *ngFor="let section of sectionItems">
         <a
-          *ngIf="isIcon(navItem); else imageNavItem"
+          *ngIf="isIcon(section); else imageSectionItem"
           mat-list-item
-          (click)="onNavClick(navItem)"
-          [routerLink]="navItem.route"
+          (click)="onNavClick(section)"
+          [routerLink]="section.route"
         >
-          <mat-icon matListIcon>{{ navItem.image.value }}</mat-icon
-          ><span class="jb-sidenav__nav-links__text">{{ navItem.name }}</span>
+          <mat-icon matListIcon>{{ section.image.value }}</mat-icon
+          ><span class="jb-sidenav__nav-links__text">{{ section.name }}</span>
         </a>
-        <ng-template #imageNavItem>
+        <ng-template #imageSectionItem>
           <a
             mat-list-item
-            (click)="onNavClick(navItem)"
-            [routerLink]="navItem.route"
+            (click)="onNavClick(section)"
+            [routerLink]="section.route"
           >
             <img
               class="jb-sidenav__nav-links__icon"
-              src="{{ navItem.image.value }}"
+              src="{{ section.image.value }}"
             />
-            <span class="jb-sidenav__nav-links__text">{{ navItem.name }}</span>
+            <span class="jb-sidenav__nav-links__text">{{ section.name }}</span>
           </a>
         </ng-template>
       </ng-container>

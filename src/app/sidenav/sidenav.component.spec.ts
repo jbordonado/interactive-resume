@@ -2,10 +2,10 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { Title } from '@angular/platform-browser';
 import { RouterTestingModule } from '@angular/router/testing';
-import { ScrollService } from '../shared/scroll.service';
-import { NAVIGATION_ITEMS } from './mock-navigation';
-import { NavigationItem } from './navigation.model';
-import { NavigationService } from './navigation.service';
+import { SECTION_ITEMS } from '../app.constants';
+import { NavigationItem } from '../interface/navigation.model';
+import { NavigationService } from '../services/navigation.service';
+import { ScrollService } from '../services/scroll.service';
 import { SidenavComponent } from './sidenav.component';
 
 describe('SidenavComponent', () => {
@@ -30,13 +30,13 @@ describe('SidenavComponent', () => {
   describe('ngOnInit', () => {
     it('should define the navigation items with the navigation service', () => {
       navigationService = TestBed.inject(NavigationService);
-      spyOn(navigationService, 'getNavigationItems').and.returnValue(
-        NAVIGATION_ITEMS
+      spyOn(navigationService, 'getSectionItems').and.returnValue(
+        SECTION_ITEMS
       );
 
       fixture.detectChanges();
 
-      expect(component.navigationItems).toEqual(NAVIGATION_ITEMS);
+      expect(component.sectionItems).toEqual(SECTION_ITEMS);
     });
   });
 

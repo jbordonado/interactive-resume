@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
+import { CERTIFICATES } from '../app.constants';
 import { CertificationService } from './certification.service';
-import { CERTIFICATES } from './mock-certificates';
 
 describe('CertificationService', () => {
   let service: CertificationService;
