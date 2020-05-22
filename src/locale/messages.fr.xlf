@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="b43068d021c725e0ce92692e1efd7c63674abdda" datatype="html">
+        <source>Open sidebar menu</source>
+        <target>Ouvrir le menu de la barre latérale</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cac6b83b68eb8d269f36e5ef1fec23c3d837aa25" datatype="html">
+        <source>Interactive resume</source>
+        <target>CV interactif</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b07a20eb43c638755dbc8442619cb346b8e169a4" datatype="html">
+        <source>Download Jordan BORDONADO resume</source>
+        <target>Télécharger le CV de Jordan BORDONADO</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ddc7871216b32e904d07c9bd79fc4675a7796369" datatype="html">
+        <source>Scroll to the top of the page</source>
+        <target>Faire défiler jusqu'en haut de la page</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b4a7c85f36c6a30cbd87c41ed13443c9e070b067" datatype="html">
+        <source>Hey there!</source>
+        <target>Bonjour !</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a114b59fdb6ac1b25300b32b6178d95bdb544e28" datatype="html">
+        <source>
+    My name is Jordan BORDONADO and I&apos;m a fullstack developer for Air France in
+    Sophia-Antipolis (France).
+        </source>
+        <target>Mon nom est Jordan BORDONADO et je suis un fullstack developer pour Air France à Sophia-Antipolis (France).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="662029ed4761939838c034fcc7a920f8a0fdc967" datatype="html">
+        <source>
+    I have a lot of passion for development and I like clean code, fairly tested
+    and easy to read so I try to set high expectations for myself.
+  </source>
+      <target>J'ai beaucoup de passion pour le développement et j'aime le code propre, testé correctement et facile à lire donc j'essaie de me fixer personnellement des attentes élevées.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2dc9271a2ab2c896d7c35bb5a24f1854a9ef89ee" datatype="html">
+        <source>
+    Feel free to dig through the different sections of the site to get to know
+    me.
+  </source>
+        <target>N'hésitezpas à naviguer à travers les différentes sections du site pour mieux me connaître.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2bbc3c6319cc446acc0c40f7212cf15d0976f8b4" datatype="html">
+        <source>
+    You can find my contact details either in the Profile section or in the
+    footer, in case you want to get in touch!
+  </source>
+        <target>Vous pouvez trouver mes coordonnées de contact soit dans la section Profil soit en bas de page, au cas où vous souhaitez entrer en contact!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f7bc1eabce82f2afa6beeb2c68525fd227b23ad4" datatype="html">
+        <source>
+      Also, here is a copy of my resume in case you&apos;re interested:
+    </source>
+        <target>Aussi, vous trouverez ci-après une copie de mon CV au cas où vous seriez intéressé:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a2dc6ab2ffd0c073babef05836d4051241d06db2" datatype="html">
+        <source>
+      Jordan BORDONADO&apos;s resume
+    </source>
+        <target>CV de Jordan BORDONADO</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d5f2d562b045657efc45665aacd42cff9cf68a0f" datatype="html">
+        <source>Download resume of Jordan BORDONADO</source>
+        <target>Télécharger le CV de Jordan BORDONADO</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/resume/resume.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e858172faf09c10c7c0d8fa823f5e157f44f0420" datatype="html">
+        <source>My learning path</source>
+        <target>Mon parcours d'éducation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/education/education.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="73c8832215b041fd4eb2158c1f2ddba98708ad80" datatype="html">
+        <source>My professional experiences so far</source>
+        <target>Mes expériences professionnelles à ce jour</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/career/career.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1568088f4bd5fd3158981e52d63dd073f0cbb0bd" datatype="html">
+        <source>
+    Since I graduated, I&apos;ve only known Air France but this is truly a great
+    environment to improve and meet amazing people in an outstanding place
+    (Sophia-Antipolis is called the &apos;Small Silicon Valley&apos;).
+  </source>
+        <target>Depuis que je suis diplômé, je n'ai connu qu'Air France mais c'est véritablement un bon environnement pour progresser et rencontrer des personnes extraordinaires dans un lieu exceptionnel (Sophia-Antipolis est appelée la petite Silicon Valley).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/career/career.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a3b3ded348f1bf9241bf5aa66b6ad5ce8f87206b" datatype="html">
+        <source>
+    I&apos;m also glad I&apos;ve had the chance to work at Amadeus just before, because
+    this is what gave me the confidence to continue on this path and especially
+    in the airline industry.
+  </source>
+        <target>Je suis également content d'avoir eu la chance de travailler à Amadeus juste avant, car c'est ce qui m'a donné confiance pour continuer dans cette voie et surtout dans l'industrie de l'aérien.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/career/career.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="199f59566005800eca93733b4728b24be3ad971a" datatype="html">
+        <source>Now</source>
+        <target>Aujourd'hui</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/career/experience/work-experience.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ceb324c99c94cb4acc34adc6d35dfea67372cb47" datatype="html">
+        <source>My certifications</source>
+        <target>Mes certifications</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/certifications/certifications.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e5eeef4e840a70212c7307e65635eb99a56812e0" datatype="html">
+        <source>
+  Most of them come from a period of time where I was very interested about Big
+  Data which was the buzzword back then. That&apos;s how I learned Scala and found
+  out about functionnal programming (I only knew of Object-oriented programming
+  at that time), which was a blessing considering that I&apos;m using a lot of these
+  concepts at my current company.
+</source>
+        <target>La plupart ont été passées durant une période où j'étais très intéressé par le Big Data qui était le mot à la mode à l'époque. C'est comme cela que j'ai appris Scala et découvert la programmation fonctionnelle (je ne connaissais alors que la programmation orientée objet), ce qui fut une chance étant donné que je retrouve beaucoup de ces concepts dans mon rôle aujourd'hui.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/certifications/certifications.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="13034c3cea46a2a195e60cb22b1c44cec8f83f14" datatype="html">
+        <source>See certificate</source>
+        <target>Voir le certificat</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/certifications/certificate/certificate.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="67ec61d4a71dff72e0633bd7d19d05aa77f95562" datatype="html">
+        <source>An overview of my most important skills</source>
+        <target>Un aperçu de mes compétences les plus importantes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/skills/skills.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4c46f52d86c3f0fe12511e3935d6de90f316a645" datatype="html">
+        <source>
+  Generally speaking, I am eager to learn and I try to go deep on the various
+  topics I deal with. Besides, I always try to keep a positive attitude in a
+  team, which means positive feedback and support at any time.
+</source>
+        <target>De manière général, je suis désireux d'apprendre et j'essaie d'aller au bout des choses sur les différentes sujets que je traite. De plus, j'essaie toujours de garder une attitude positive au sein de l'équipe, ce qui signifie du feedbacks positifs et du support à tout moment.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/skills/skills.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="996ce6ab291b0b50fcf0a8cd589844eaf8461108" datatype="html">
+        <source>I&apos;m a big fan of sports in general, but mostly soccer and
+    tennis</source>
+        <target>Je suis un grand fan de sports en général, mais plus particulièrement le football et le tennis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/bonus/bonus.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="927ffbe86a2b09c66835bf4afaf32eeb47b3b6f5" datatype="html">
+        <source>I love to travel: I&apos;ve been to quite a few places in Europe and
+    Asia</source>
+        <target>J'adore voyager : j'ai été dans un bon nombre de lieux en Europe et en Asie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/bonus/bonus.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="027071c25eb58dbd6a7c9d53fe105cd6eab331cc" datatype="html">
+        <source>I want to learn mandarin and I started to work on that a while
+    ago!</source>
+        <target>Je veux apprendre le mandarin et j'ai commencé à travailler sur cela il y a déjà un certain moment.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/bonus/bonus.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="25db245377f49b209f89ccee8639fa196eb4f064">
+        <source>Brief information about me</source>
+        <target>Quelques informations à mon sujet</target>
+      </trans-unit>
+      <trans-unit id="5207787379174733638">
+        <source>Technical skills</source>
+        <target>Compétences techniques</target>
+      </trans-unit>
+      <trans-unit id="6515586072235899422">
+        <source>Soft skills</source>
+        <target>Compétences générales</target>
+      </trans-unit>
+      <trans-unit id="8753699126375883348">
+        <source>Teamplayer</source>
+        <target>Esprit d'équipe</target>
+      </trans-unit>
+      <trans-unit id="6459042858765959722">
+        <source>Autonomous</source>
+        <target>Autonome</target>
+      </trans-unit>
+      <trans-unit id="1982402490224558382">
+        <source>Quick learner</source>
+        <target>Capacité à apprendre rapidement</target>
+      </trans-unit>
+      <trans-unit id="8521025991364645397">
+        <source>Resistance to pressure</source>
+        <target>Résistance à la pression</target>
+      </trans-unit>
+      <trans-unit id="189903092156064519">
+        <source>Resilient</source>
+        <target>Résilient</target>
+      </trans-unit>
+      <trans-unit id="6915429060840718325">
+        <source>Communication</source>
+        <target>Communication</target>
+      </trans-unit>
+      <trans-unit id="8476096141016104749">
+        <source>Positive mindset</source>
+        <target>Bon état d'esprit</target>
+      </trans-unit>
+      <trans-unit id="2821179408673282599">
+        <source>Home</source>
+        <target>Accueil</target>
+      </trans-unit>
+      <trans-unit id="4915431133669985304">
+        <source>Profile</source>
+        <target>Profil</target>
+      </trans-unit>
+      <trans-unit id="8020402390620783618">
+        <source>Education</source>
+        <target>Formation</target>
+      </trans-unit>
+      <trans-unit id="7694552554517611019">
+        <source>Career</source>
+        <target>Expériences pro</target>
+      </trans-unit>
+      <trans-unit id="4342625008558026850">
+        <source>Skills</source>
+        <target>Compétences</target>
+      </trans-unit>
+      <trans-unit id="7a29205a4c809c50f94adf801ec23e34aaf1078a" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ age }}"/> years old</source>
+        <target><x id="INTERPOLATION" equiv-text="{{ age }}"/> ans</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/profile.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6719867213905887704">
+        <source>Overall I'm an experienced developer and I understand very well business
+    needs to deliver high quality items.
+        </source>
+        <target>Globalement je suis un développeur expérimenté et je comprends parfaitement les besoins
+        business pour délivrer des fonctionnalités de qualité.</target>
+      </trans-unit>
+      <trans-unit id="5532815857921814364">
+        <source>I enjoy facing challenges and difficult tasks and I'm able to perform
+    well under pressure.
+        </source>
+        <target>J'apprécie les challenges et les tâches difficiles et je suis capable de
+        travailler efficacement sous la pression
+        </target>
+      </trans-unit>
+      <trans-unit id="5788848768936722532">
+        <source>I also fit great in a team because I adapt and learn very fast in a new
+    environment, I always make time to provide support or guidance to my
+    colleagues and I love to have feedback on my work and try to expand my
+    knowledge.
+        </source>
+        <target>Je m'intègre également très bien dans une équipe car je m'adapte et
+        j'apprends rapidement dans un nouvel environnement, je prends toujours le temps
+        de donner des conseils ou de l'aide à mes collègues et j'adore recevoir du feedback sur
+        mon travail and essayer d'améliorer mes connaissances.
+        </target>
+      </trans-unit>
+      <trans-unit id="3854994952528488721">
+        <source>Engineer in Applied Mathematics and Modelling</source>
+        <target>Ingénieur en Mathématiques Appliquées et Modélsiation</target>
+      </trans-unit>
+      <trans-unit id="676831741944749930">
+        <source>Specialized in mathematics and computer science applied to finance.</source>
+        <target>Spécialité Informatique et Mathématiques Appliquées à la Finance et à l'Assurance</target>
+      </trans-unit>
+      <trans-unit id="7656321708937590602">
+        <source>Technical University of Denmark</source>
+        <target>Université technique du Danemark</target>
+      </trans-unit>
+      <trans-unit id="1343935597509149750">
+        <source>Master's degree in Applied Mathematics and Modelling</source>
+        <target>Diplôme de Master en Mathématiques Appliquées et Modélisation</target>
+      </trans-unit>
+      <trans-unit id="7255633134634111575">
+        <source>Exchange semester in Denmark.</source>
+        <target>Semestre d'échange au Danemark.</target>
+      </trans-unit>
+      <trans-unit id="1660878021351618881">
+        <source>Scientific subjects, equivalent to British “A” Levels or American High School Diploma.</source>
+        <target> </target>
+      </trans-unit>
+      <trans-unit id="3089662243846786827">
+        <source>Fullstack developer</source>
+        <target>Développeur Fullstack</target>
+      </trans-unit>
+      <trans-unit id="9012632862047882276">
+        <source>Development and maintenance of disruption flows
+        (claim creation & follow my claim, flight status, missing baggage declaration)
+        for Air France / KLM joint booking website
+        </source>
+        <target>Développement et maintenance des flows de disruption
+        (création et suivi de plaintes, statut des vols, déclaration de baggage manquant)
+        pour le site de vente de billets Air France / KLM
+        </target>
+      </trans-unit>
+      <trans-unit id="3382027838143427548">
+        <source>The project is at the same time very challenging, at the cutting edge of technology,
+         mature (CI/CD with 1 release / day) and multicultural (AF/KLM - english communication).
+         </source>
+        <target>Le projet est à la fois très stimulant, à la pointe au niveau des technologies,
+        mature (CI/CD avec 1 release / jour) et multiculturel (AF/KLM - communication en anglais).
+        </target>
+      </trans-unit>
+      <trans-unit id="1083592750290381516">
+        <source>This new website is fully responsive and its traffic is increasing regularly.</source>
+        <target>Ce nouveau site est entièrement responsive et son trafic augmente régulièrement.</target>
+      </trans-unit>
+      <trans-unit id="5801071589165724641">
+        <source>Therefore, it requires strong abilities in development (front-end / back-end)
+        as well as communication to follow the rapid pace of the project.
+        </source>
+        <target>Ainsi, cela demande des compétences solides en développement (front-end / back-end)
+        et également en communication pour être à même de suivre le rythme effrené du projet.
+        </target>
+      </trans-unit>
+      <trans-unit id="5405138480962896101">
+        <source>I adapted fast and was able to improve and refactor a lot of the project
+        in my team's scope, putting a strong accent on the testing part.
+        </source>
+        <target>Je me suis adapté rapidement et j'ai été capable de monter en compétences
+        et de faire du refactoring de code sur une grande partie du projet dans le scope de
+        mon équipe, en insistant fortement sur la partie test.
+        </target>
+      </trans-unit>
+      <trans-unit id="8417301529458038555">
+        <source>Front-end developer</source>
+        <target>Développeur Front-end</target>
+      </trans-unit>
+      <trans-unit id="4870753446907766995">
+        <source>Development and maintenance of booking flows (standard / unaccompanied minor / ...)
+        for Air France mobile website (mobile.airfrance.fr)
+        </source>
+        <target>Développement et maintenance des flows de réservation
+         (standard / mineur non accompagné / ...) pour le site mobile
+          d'Air France (mobile.airfrance.fr)
+        </target>
+      </trans-unit>
+      <trans-unit id="2470768564387642712">
+        <source>Overall, I had the same kind of responsabilities than in my previous role,
+        except that it was now for the mobile website.
+        </source>
+        <target>Dans l'ensemble, j'avais les mêmes réponsabilités que dans mon rôle précédant,
+        à part qu'il s'agissait cette fois du site mobile.
+        </target>
+      </trans-unit>
+      <trans-unit id="6514551570380439004">
+        <source>The main difference was that this project also required to learn
+        the art of release management, in the context of a critical application
+        that generates a high traffic and income.
+        </source>
+        <target>La principale différence était que le projet demandait également l'apprentissage
+        des procédures de mise en production dans le contexte d'une application critique qui
+        génère un fort trafic et revenu.
+        </target>
+      </trans-unit>
+      <trans-unit id="5157394400157300302">
+        <source>Front-end developer (Scalian Contractor)</source>
+        <target>Développeur Front-end (consultant Scalian)</target>
+      </trans-unit>
+      <trans-unit id="5911738836002791767">
+        <source>Development and maintenance of booking flows (standard / unaccompanied minor / ...)
+        for Air France website (www.airfrance.fr)
+        </source>
+        <target>Développement et maintenance des flows de réservation (standard / mineur non accompagné / ...)
+        pour le site d'Air France (www.airfrance.fr)
+        </target>
+      </trans-unit>
+      <trans-unit id="2371141059077115045">
+        <source>This role required a high autonomy since this is an old project
+        with loss of functional knowledge over the years.
+        </source>
+        <target>Ce projet a demandé une forte autonomie car il s'agit d'un vieux projet
+        qui a connu de nombreux départs depuis sa création, provoquant une perte de
+        connaissance fonctionnelle précieuse au fil du temps.
+        </target>
+      </trans-unit>
+      <trans-unit id="5822194575698674389">
+        <source>Beside the technical experience I was able to take from this role,
+        it also taught me a lot about cautiousness and how to deal with big projects
+        with a high traffic and income while it has a lot of dependencies.
+        </source>
+        <target>A part l'expérience au niveau technique que j'ai pu développer grâce à ce rôle, cela
+        m'a également appris à développer avec prudence et rigueur, et cela m'a donné un clair aperçu
+        de la gestion d'un gros projet avec un fort trafic et revenu alors qu'il contient de nombreuses dépendances
+        avec des applications tierces.
+        </target>
+      </trans-unit>
+      <trans-unit id="4194064517810933749">
+        <source>After a few months, I took on more responsabilities and was an essential
+        part of technical and organizational decisions in the team
+        (architecture, git flow, code review, newcomers training, documentation setup, ...)
+        </source>
+        <target>Après quelques mois, j'ai pris plus de responsabilités et j'étais un élement essentiel
+        des processus de décisions techniques et organisationnelles au sein de l'équipe
+        (architecture, git flow, code review, formation des nouveaux arrivants, mise en place de documentations, ...)
+        </target>
+      </trans-unit>
+      <trans-unit id="1995546168874101187">
+        <source>Apprenticeship - Fullstack developer</source>
+        <target>Apprentissage - Développeur Fullstack</target>
+      </trans-unit>
+      <trans-unit id="1787912500355690011">
+        <source>Creation of an Internet Booking Engine prototype that will be used as
+        an internal tool to showcase the eRetail XML API to airline customers
+        (data setup, request/response samples, steps to follow, ...)
+        </source>
+        <target>Création d'un prototype de moteur de réservation qui sera utilisé comme un outil
+        interne pour démontrer l'utilisation de l'API eRetail XML aux compagnies aériennes clientes
+        (configurations techniques en prérequis, échantillon de requêtes/réponses, étapes à suivre, ...)
+        </target>
+      </trans-unit>
+      <trans-unit id="4994314912696636622">
+        <source>First, it taught me all the basics of an airline booking flow and the
+        technical terms along that so at that point it was already a big win for me.
+        </source>
+        <target>D'abord, cela m'a appris toutes les connaissances de base sur un flow de réservation
+        d'une compagnie aérienne et le jargon technique associé donc cela était déjà une belle réussite pour moi.
+        </target>
+      </trans-unit>
+      <trans-unit id="2561233381523780449">
+        <source>Then, I had a lot of autonomy because I was part of a team of functional analyst
+        and no developers, so I had to learn a lot and sharpen my mind to be able to make the
+        right technical and design decisions.
+        </source>
+        <target>Ensuite, j'avais beaucoup d'autonomie car je faisais partie d'une équipe composée
+        uniquement d'analyste fonctionnel, donc j'ai dû apprendre beaucoup par moi-même et aiguiser
+        mon esprit afin d'être capable de faire les choix techniques et design qui sont les plus
+        justes et adaptés.
+        </target>
+      </trans-unit>
+      <trans-unit id="6090932117899374907">
+        <source>I was also keen on improving the initial target we set, and in that sense
+        it was appreciated that I was able to come up with a lot of initiatives that made
+        the prototype simply better and useful.
+        </source>
+        <target>J'étais également très volontaire pour améliorer l'objectif initial défini, et en ce sens
+        mes nombreuses initatives pour rendre le prototype meilleur et plus utile ont été très appréciées.
+        </target>
+      </trans-unit>
+      <trans-unit id="3754473300599606450">
+        <source>The prototype was eventually a success and we even found a way to deploy it
+        and make it accessible remotely for everyone on Amadeus network, which was a bonus
+         goal initially.
+         </source>
+        <target>Le prototype fut un succès et nous avons mêmes pu trouver le moyen de déployer
+        l'application avec une solution interne afin de la rendre accessible facilement à n'importe
+        qui connecté au réseau d'Amadeus, ce qui était seulement une étape bonus à la base.
+        </target>
+      </trans-unit>
+      <trans-unit id="3585193566472568213">
+        <source>At the end of the apprenticeship, I built a lot of confidence in me and
+         I learned a lot on various topics, so I was very grateful to have chosen Amadeus.
+         </source>
+        <target>A la fin de mon apprentissage, j'ai accumulé beaucoup de confiance en moi et
+        j'ai énormément appris sur de nombreux sujets, donc j'étais très satisfait d'avoir choisi Amadeus.
+        </target>
+      </trans-unit>
+      <trans-unit id="6298180194142057990">
+        <source>Intership - Developer (maths oriented)</source>
+        <target>Stage - Développeur (orienté maths)</target>
+      </trans-unit>
+      <trans-unit id="4656396854387339205">
+        <source>Implementation of the Cucker-Smale mathematical model, based on the construction
+        and analysis of a generic flocking model.
+        </source>
+        <target>Implémentation du modèle mathématiques de Cucker-Smale, basé sur la construction et
+        l'analyse d'un modèle générique sur le comportement de groupe d'oiseaux.</target>
+      </trans-unit>
+      <trans-unit id="5510577902789547988">
+        <source>First for the model analysis, I read a lot of scientific papers describing
+        the application fields and the parameters, which eventually made me better at understanding
+        such complicated scientific papers.
+        </source>
+        <target>D'abord, pour l'analyse du modèle, j'ai lu beaucoup de papiers scientifiques décrivant
+        les domaines d'applications et les paramètres, ce qui m'a permis d'améliorer mes capacités
+        à comprendre des articles scientifiques décrivant des concepts compliqués.
+        </target>
+      </trans-unit>
+      <trans-unit id="4716710438799082428">
+        <source>Then I was able to implement the mathematical model in MATLAB, to provide simulation
+        of several scenarios both in 2D and in 3D.
+        </source>
+        <target>Ensuite, j'ai été capable d'implémenter le modèle mathématique sur MATLAB, afin
+        de réaliser des simulations de divers scénarios, en 2D et en 3D.
+        </target>
+      </trans-unit>
+      <trans-unit id="4448489457443690075">
+        <source>Scientific papers</source>
+        <target>Articles scientifiques</target>
+      </trans-unit>
+      <trans-unit id="5392438152907479344">
+        <source>Internship - Developer</source>
+        <target>Stage - Développeur</target>
+      </trans-unit>
+      <trans-unit id="8519809203146573616">
+        <source>Creation of dynamic Word forms to optimize the time employees spend on filling them</source>
+        <target>Création de formulaires dynamiques Word afin d'optimiser le temps que les employées passent
+        à les remplir</target>
+      </trans-unit>
+      <trans-unit id="2600432265681523071">
+        <source>I first took part to two field missions with an employee to understand the
+        employees' needs and have a global view of the current limitations of their forms.
+        </source>
+        <target>J'ai d'abord pris part à deux missions sur le terrain avec un agent afin de comprendre
+        les besoins techniques et fonctionnelles des agents et avoir une vision globale des
+        limitations actuelles des formulaires.
+        </target>
+      </trans-unit>
+      <trans-unit id="8913028597849353097">
+        <source>I then proceeded to automate various actions on the forms (each with ~ 40 pages)
+        such as completion, insertion, deletion of checkboxes, field text, pages or images.
+        </source>
+        <target>J'ai ensuite procédé à l'automatisation de différentes actions sur les formulaires
+        (chacun comportant ~ 40 pages) telles que le remplissage, l'insertion et la suppression
+        de checkbox, zones de texte, pages ou images.
+        </target>
+      </trans-unit>
+      <trans-unit id="361049699086642519">
+        <source>Eventually, I took time to write technical documents describing how to use the
+        new forms and modify them if needed.
+        </source>
+        <target>Finalement, j'ai pris le temps d'écrire des documentations techniques décrivant comment
+        utiliser les nouveaux formulaires et les modifier si nécessaire.
+        </target>
+      </trans-unit>
+      <trans-unit id="f2069a2036d1711a36d249c614f5cc88ff31986b">
+        <source>A little extra information about me
+        </source>
+        <target>Quelques anecdotes supplémentaires à mon sujet
+        </target>
+      </trans-unit>
+      <trans-unit id="2526671577931745013" datatype="html">
+        <source><x id="PH" equiv-text="{{ currentJobTitle }}"/> (+<x id="PH_1" equiv-text="{{ workingYears }}"/> years experience)</source>
+        <target><x id="PH" equiv-text="{{ currentJobTitle }}"/> (+<x id="PH_1" equiv-text="{{ workingYears }}"/> années d'expérience)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/profile/profile.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,6 +1,7 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { Title } from '@angular/platform-browser';
+import { RouterTestingModule } from '@angular/router/testing';
 import { ScrollService } from '../shared/scroll.service';
 import { NAVIGATION_ITEMS } from './mock-navigation';
 import { NavigationItem } from './navigation.model';
@@ -18,6 +19,7 @@ describe('SidenavComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
+      imports: [RouterTestingModule],
       declarations: [SidenavComponent],
     }).compileComponents();
 

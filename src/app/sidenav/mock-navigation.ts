@@ -2,7 +2,7 @@ import { NavigationItem } from './navigation.model';
 
 export const NAVIGATION_ITEMS: NavigationItem[] = [
   {
-    name: 'Home',
+    name: $localize`Home`,
     route: '/',
     image: {
       type: 'img',
@@ -10,7 +10,7 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
     },
   },
   {
-    name: 'Profile',
+    name: $localize`Profile`,
     route: '/profile',
     image: {
       type: 'icon',
@@ -18,7 +18,7 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
     },
   },
   {
-    name: 'Education',
+    name: $localize`Education`,
     route: '/education',
     image: {
       type: 'img',
@@ -26,7 +26,7 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
     },
   },
   {
-    name: 'Career',
+    name: $localize`Career`,
     route: '/career',
     image: {
       type: 'icon',
@@ -34,7 +34,7 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
     },
   },
   {
-    name: 'Certifications',
+    name: `Certifications`,
     route: '/certifications',
     image: {
       type: 'img',
@@ -42,7 +42,7 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
     },
   },
   {
-    name: 'Skills',
+    name: $localize`Skills`,
     route: '/skills',
     image: {
       type: 'icon',

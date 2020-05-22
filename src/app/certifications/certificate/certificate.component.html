@@ -21,7 +21,12 @@
   </div>
 
   <div *ngIf="certificate.link" class="jb-certificate__card__link">
-    <a href="{{ certificate.link }}" mat-button color="primary" target="_blank"
+    <a
+      href="{{ certificate.link }}"
+      mat-button
+      color="primary"
+      target="_blank"
+      i18n
       >See certificate</a
     >
   </div>

@@ -4,11 +4,13 @@
     matTooltip="Open sidebar menu"
     (click)="onMenuClick()"
     aria-label="Open sidebar menu"
+    i18n-matTooltip
+    i18n-aria-label
   >
     <mat-icon>menu</mat-icon>
   </button>
   <a mat-button routerLink="/" (click)="onTitleClick()">
-    <h1>Interactive resume</h1>
+    <h1 i18n>Interactive resume</h1>
   </a>
   <a
     mat-icon-button
@@ -17,6 +19,8 @@
     matTooltip="Download Jordan BORDONADO resume"
     class="jb-header__toolbar__download"
     aria-label="Download Jordan BORDONADO resume"
+    i18n-matTooltip
+    i18n-aria-label
   >
     <mat-icon>save_alt</mat-icon>
   </a>

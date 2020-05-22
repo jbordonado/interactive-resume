@@ -2,7 +2,7 @@ import { Skills } from './skills.model';
 
 export const SKILLS: Skills[] = [
   {
-    category: 'Technical skills',
+    category: $localize`Technical skills`,
     items: [
       'Javascript',
       'Angular',
@@ -19,15 +19,15 @@ export const SKILLS: Skills[] = [
     ],
   },
   {
-    category: 'Soft skills',
+    category: $localize`Soft skills`,
     items: [
-      'Teamplayer',
-      'Autonomous',
-      'Quick learner',
-      'Resistance to pressure',
-      'Resilient',
-      'Communication',
-      'Positive mindset',
+      $localize`Teamplayer`,
+      $localize`Autonomous`,
+      $localize`Quick learner`,
+      $localize`Resistance to pressure`,
+      $localize`Resilient`,
+      $localize`Communication`,
+      $localize`Positive mindset`,
     ],
   },
 ];

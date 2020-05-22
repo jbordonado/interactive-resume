@@ -30,11 +30,11 @@ export const PROFILE: Profile = {
     },
   ],
   description: [
-    `Overall I'm an experienced developer and I understand very well business
+    $localize`Overall I'm an experienced developer and I understand very well business
     needs to deliver high quality items.`,
-    `I enjoy facing challenges and difficult tasks and I'm able to perform
+    $localize`I enjoy facing challenges and difficult tasks and I'm able to perform
     well under pressure.`,
-    `I also fit great in a team because I adapt and learn very fast in a new
+    $localize`I also fit great in a team because I adapt and learn very fast in a new
     environment, I always make time to provide support or guidance to my
     colleagues and I love to have feedback on my work and try to expand my
     knowledge.`,
