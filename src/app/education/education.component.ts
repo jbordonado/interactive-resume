@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { SchoolExperience } from '../shared/experience.model';
-import { ExperienceService } from '../shared/experience.service';
+import { SchoolExperience } from '../interface/experience.model';
+import { ExperienceService } from '../services/experience.service';
 
 @Component({
   selector: 'jb-education',

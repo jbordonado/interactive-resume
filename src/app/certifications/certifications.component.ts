@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Certificate } from './certificate.model';
-import { CertificationService } from './certification.service';
+import { Certificate } from '../interface/certificate.model';
+import { CertificationService } from '../services/certification.service';
 
 @Component({
   selector: 'jb-certifications',

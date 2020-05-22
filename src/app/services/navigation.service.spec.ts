@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import { NAVIGATION_ITEMS } from './mock-navigation';
+import { SECTION_ITEMS } from '../app.constants';
 import { NavigationService } from './navigation.service';
 
 describe('NavigationService', () => {
@@ -12,9 +12,9 @@ describe('NavigationService', () => {
 
   describe('getNavigationItems', () => {
     it('should return the navigation items', () => {
-      const navigationItems = service.getNavigationItems();
+      const navigationItems = service.getSectionItems();
 
-      expect(navigationItems).toEqual(NAVIGATION_ITEMS);
+      expect(navigationItems).toEqual(SECTION_ITEMS);
     });
   });
 });

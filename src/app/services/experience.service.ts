@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
-import { SchoolExperience, WorkExperience } from './experience.model';
-import { SCHOOL_EXPERIENCES, WORK_EXPERIENCES } from './mock-experiences';
+import { SCHOOL_EXPERIENCES, WORK_EXPERIENCES } from '../app.constants';
+import {
+  SchoolExperience,
+  WorkExperience,
+} from '../interface/experience.model';
 
 @Injectable({
   providedIn: 'root',

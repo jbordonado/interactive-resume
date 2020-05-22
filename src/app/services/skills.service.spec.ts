@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import { SKILLS } from './mock-skills';
+import { SKILLS } from '../app.constants';
 import { SkillsService } from './skills.service';
 
 describe('SkillsService', () => {

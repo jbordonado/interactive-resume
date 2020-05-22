@@ -6,15 +6,39 @@
     top: 0;
     height: $toolbar-height;
     z-index: 2;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    &__download {
-      transition: all 0.2s ease-in-out;
+    &__menu {
+      @include very-small {
+        width: max-content;
+      }
+    }
 
-      :hover {
-        transform: scale(1.5);
+    &__title {
+      flex-shrink: 0;
+    }
+
+    &__actions {
+      > a {
+        @include very-small {
+          width: max-content;
+        }
+      }
+      > a:not(:first-child) {
+        @include very-small {
+          padding-left: 8px;
+        }
+      }
+
+      &__download {
+        transition: all 0.2s ease-in-out;
+
+        :hover {
+          transform: scale(1.5);
+        }
       }
     }
   }

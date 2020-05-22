@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Certificate } from './certificate.model';
-import { CERTIFICATES } from './mock-certificates';
+import { CERTIFICATES } from '../app.constants';
+import { Certificate } from '../interface/certificate.model';
 
 @Injectable({
   providedIn: 'root',

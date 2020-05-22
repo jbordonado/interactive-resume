@@ -8,9 +8,9 @@ import {
   SimpleChanges,
 } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { ScrollService } from '../shared/scroll.service';
-import { NavigationItem } from './navigation.model';
-import { NavigationService } from './navigation.service';
+import { NavigationItem } from '../interface/navigation.model';
+import { NavigationService } from '../services/navigation.service';
+import { ScrollService } from '../services/scroll.service';
 
 @Component({
   selector: 'jb-sidenav',
@@ -22,7 +22,7 @@ export class SidenavComponent implements OnInit, OnChanges {
 
   @Output() sidenavToggle = new EventEmitter<boolean>();
 
-  public navigationItems: NavigationItem[];
+  public sectionItems: NavigationItem[];
   public isOpen: boolean;
 
   constructor(
@@ -32,7 +32,7 @@ export class SidenavComponent implements OnInit, OnChanges {
   ) {}
 
   ngOnInit(): void {
-    this.navigationItems = this.navigationService.getNavigationItems();
+    this.sectionItems = this.navigationService.getSectionItems();
   }
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -40,13 +40,13 @@ export class SidenavComponent implements OnInit, OnChanges {
     this.isOpen = this.isSidebarOpen;
   }
 
-  public isIcon(navItem: NavigationItem): boolean {
-    return navItem.image.type === 'icon';
+  public isIcon(sectionItem: NavigationItem): boolean {
+    return sectionItem.image.type === 'icon';
   }
 
-  public onNavClick(navItem: NavigationItem): void {
+  public onNavClick(sectionItem: NavigationItem): void {
     this.titleService.setTitle(
-      `Jordan BORDONADO interactive resume - ${navItem.name}`
+      `Jordan BORDONADO interactive resume - ${sectionItem.name}`
     );
     this.closeSidenav();
   }

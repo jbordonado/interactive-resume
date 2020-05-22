@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
+import { SCHOOL_EXPERIENCES, WORK_EXPERIENCES } from '../app.constants';
 import { ExperienceService } from './experience.service';
-import { SCHOOL_EXPERIENCES, WORK_EXPERIENCES } from './mock-experiences';
 
 describe('ExperienceService', () => {
   let service: ExperienceService;

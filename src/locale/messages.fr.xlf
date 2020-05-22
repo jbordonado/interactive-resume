@@ -22,6 +22,14 @@
           <context context-type="linenumber">13</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="4d84202141b9391276844b79ffe0fbdbffa8f405" datatype="html">
+        <source>Navigate to <x id="INTERPOLATION" equiv-text="{{ item.name }}"/> version</source>
+        <target>Naviguer vers la partie <x id="INTERPOLATION" equiv-text="{{ item.name }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="b07a20eb43c638755dbc8442619cb346b8e169a4" datatype="html">
         <source>Download Jordan BORDONADO resume</source>
         <target>Télécharger le CV de Jordan BORDONADO</target>
@@ -623,6 +631,14 @@
           <context context-type="sourcefile">src/app/profile/profile.component.html</context>
           <context context-type="linenumber">21</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="1587130621411297981">
+        <source>Navigate to french version</source>
+        <target>Naviguer vers la version française</target>
+      </trans-unit>
+      <trans-unit id="5243200687670447891">
+        <source>Navigate to english version</source>
+        <target>Naviguer vers la version anglaise</target>
       </trans-unit>
     </body>
   </file>

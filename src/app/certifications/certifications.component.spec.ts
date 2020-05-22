@@ -1,8 +1,8 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { CertificationService } from './certification.service';
+import { CERTIFICATES } from '../app.constants';
+import { CertificationService } from '../services/certification.service';
 import { CertificationsComponent } from './certifications.component';
-import { CERTIFICATES } from './mock-certificates';
 
 describe('CertificationsComponent', () => {
   let component: CertificationsComponent;

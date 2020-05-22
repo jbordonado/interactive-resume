@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
-import { ScrollService } from './shared/scroll.service';
+import { ScrollService } from './services/scroll.service';
 
 @Component({
   selector: 'app-root',

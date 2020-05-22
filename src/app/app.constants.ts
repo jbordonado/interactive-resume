@@ -1,4 +1,129 @@
-import { SchoolExperience, WorkExperience } from './experience.model';
+import { Certificate } from './interface/certificate.model';
+import { SchoolExperience, WorkExperience } from './interface/experience.model';
+import { NavigationItem } from './interface/navigation.model';
+import { Profile } from './interface/profile.model';
+import { Skills } from './interface/skills.model';
+
+export const SECTION_ITEMS: NavigationItem[] = [
+  {
+    name: $localize`Home`,
+    route: '/',
+    image: {
+      type: 'img',
+      value: 'assets/home_outline.svg',
+    },
+  },
+  {
+    name: $localize`Profile`,
+    route: '/profile',
+    image: {
+      type: 'icon',
+      value: 'perm_identity',
+    },
+  },
+  {
+    name: $localize`Education`,
+    route: '/education',
+    image: {
+      type: 'img',
+      value: 'assets/school_outline.svg',
+    },
+  },
+  {
+    name: $localize`Career`,
+    route: '/career',
+    image: {
+      type: 'icon',
+      value: 'work_outline',
+    },
+  },
+  {
+    name: `Certifications`,
+    route: '/certifications',
+    image: {
+      type: 'img',
+      value: 'assets/certificate_outline.svg',
+    },
+  },
+  {
+    name: $localize`Skills`,
+    route: '/skills',
+    image: {
+      type: 'icon',
+      value: 'star_outline',
+    },
+  },
+  {
+    name: 'Bonus',
+    route: '/bonus',
+    image: {
+      type: 'icon',
+      value: 'card_giftcard',
+    },
+  },
+];
+
+export const LANGUAGE_ITEMS: NavigationItem[] = [
+  {
+    name: `fr`,
+    route: '/fr',
+    image: {
+      type: 'img',
+      value: 'assets/fr-flag.png',
+    },
+    ariaLabel: $localize`Navigate to french version`,
+  },
+  {
+    name: `en`,
+    route: '/en',
+    image: {
+      type: 'img',
+      value: 'assets/us-flag.png',
+    },
+    ariaLabel: $localize`Navigate to english version`,
+  },
+];
+
+export const PROFILE: Profile = {
+  firstname: 'Jordan',
+  lastname: 'Bordonado',
+  birthDate: new Date(1993, 8, 27, 0, 0, 0, 0),
+  image: 'assets/profile-logo.jpg',
+  location: {
+    city: 'Antibes',
+    country: 'France',
+  },
+  contactDetails: [
+    {
+      touchpoint: 'Email',
+      link: 'mailTo:jordan.bordonado@gmail.com',
+      image: 'assets/gmail-icon.png',
+      ariaLabel: `Jordan Bordonado Email`,
+    },
+    {
+      touchpoint: 'LinkedIn',
+      link: 'https://www.linkedin.com/in/jbordonado',
+      image: 'assets/linkedin-logo.png',
+      ariaLabel: `Jordan Bordonado LinkedIn`,
+    },
+    {
+      touchpoint: 'GitHub',
+      link: 'https://github.com/Aigloun',
+      image: 'assets/github-mark.png',
+      ariaLabel: `Jordan Bordonado GitHub`,
+    },
+  ],
+  description: [
+    $localize`Overall I'm an experienced developer and I understand very well business
+    needs to deliver high quality items.`,
+    $localize`I enjoy facing challenges and difficult tasks and I'm able to perform
+    well under pressure.`,
+    $localize`I also fit great in a team because I adapt and learn very fast in a new
+    environment, I always make time to provide support or guidance to my
+    colleagues and I love to have feedback on my work and try to expand my
+    knowledge.`,
+  ],
+};
 
 export const SCHOOL_EXPERIENCES: SchoolExperience[] = [
   {
@@ -165,5 +290,94 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
       ],
       technologies: ['OOo Basic, VBA'],
     },
+  },
+];
+
+export const CERTIFICATES: Certificate[] = [
+  {
+    name: 'Big Data analysis with Scala and Spark',
+    authorityLogo: 'coursera-logo.png',
+    authorityName: 'Coursera',
+    issuingDate: new Date(2018, 0),
+    link:
+      'https://www.coursera.org/account/accomplishments/verify/ZTKDG2DUPSPB',
+  },
+  {
+    name: 'Parallel Programming',
+    authorityLogo: 'coursera-logo.png',
+    authorityName: 'Coursera',
+    issuingDate: new Date(2017, 11),
+    link:
+      'https://www.coursera.org/account/accomplishments/verify/CBNF9HJGDC3G',
+  },
+  {
+    name: 'Functionnal Program Design in Scala',
+    authorityLogo: 'coursera-logo.png',
+    authorityName: 'Coursera',
+    issuingDate: new Date(2017, 7),
+    link:
+      'https://www.coursera.org/account/accomplishments/verify/HJKYLLPASAMP',
+  },
+  {
+    name: 'Functionnal Programming Principles in Scala',
+    authorityLogo: 'coursera-logo.png',
+    authorityName: 'Coursera',
+    issuingDate: new Date(2017, 7),
+    link:
+      'https://www.coursera.org/account/accomplishments/verify/GLEC4UNB6F6L',
+  },
+  {
+    name: 'Hadoop Platform and Application Framework',
+    authorityLogo: 'coursera-logo.png',
+    authorityName: 'Coursera',
+    issuingDate: new Date(2017, 5),
+    link:
+      'https://www.coursera.org/account/accomplishments/verify/QDS8V6HH3AQ3',
+  },
+  {
+    name: 'Oracle Certified Associate, Java SE 8 Programmer',
+    authorityLogo: 'oracle-logo.jpg',
+    authorityName: 'Oracle',
+    issuingDate: new Date(2016, 6),
+    link:
+      'https://www.youracclaim.com/badges/a9419792-83e6-4a4a-834b-5fc4663325d6/linked_in_profile',
+  },
+  {
+    name: 'Test of English for International Communication (TOEIC)',
+    authorityLogo: 'polytech-logo.jpg',
+    authorityName: "Polytech'Nice Sophia",
+    issuingDate: new Date(2015, 5),
+  },
+];
+
+export const SKILLS: Skills[] = [
+  {
+    category: $localize`Technical skills`,
+    items: [
+      'Javascript',
+      'Angular',
+      'Karma',
+      'Jest',
+      'Typescript',
+      'Apollo GraphQL',
+      'HTML',
+      'CSS / SASS',
+      'Java / J2EE',
+      'JUnit',
+      'Selenium',
+      'Scala',
+    ],
+  },
+  {
+    category: $localize`Soft skills`,
+    items: [
+      $localize`Teamplayer`,
+      $localize`Autonomous`,
+      $localize`Quick learner`,
+      $localize`Resistance to pressure`,
+      $localize`Resilient`,
+      $localize`Communication`,
+      $localize`Positive mindset`,
+    ],
   },
 ];

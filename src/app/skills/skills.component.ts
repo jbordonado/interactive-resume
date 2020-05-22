@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Skills } from './skills.model';
-import { SkillsService } from './skills.service';
+import { Skills } from '../interface/skills.model';
+import { SkillsService } from '../services/skills.service';
 
 @Component({
   selector: 'jb-skills',

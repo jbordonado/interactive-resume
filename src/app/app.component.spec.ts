@@ -2,7 +2,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { of } from 'rxjs';
 import { AppComponent } from './app.component';
-import { ScrollService } from './shared/scroll.service';
+import { ScrollService } from './services/scroll.service';
 
 describe('AppComponent', () => {
   let component: AppComponent;

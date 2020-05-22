@@ -3,25 +3,42 @@
     mat-icon-button
     matTooltip="Open sidebar menu"
     (click)="onMenuClick()"
+    class="jb-header__toolbar__menu"
     aria-label="Open sidebar menu"
     i18n-matTooltip
     i18n-aria-label
   >
     <mat-icon>menu</mat-icon>
   </button>
-  <a mat-button routerLink="/" (click)="onTitleClick()">
+  <a
+    mat-button
+    routerLink="/"
+    (click)="onTitleClick()"
+    class="jb-header__toolbar__title"
+  >
     <h1 i18n>Interactive resume</h1>
   </a>
-  <a
-    mat-icon-button
-    href="assets/CV-Jordan-Bordonado.pdf"
-    download="CV-Jordan-Bordonado.pdf"
-    matTooltip="Download Jordan BORDONADO resume"
-    class="jb-header__toolbar__download"
-    aria-label="Download Jordan BORDONADO resume"
-    i18n-matTooltip
-    i18n-aria-label
-  >
-    <mat-icon>save_alt</mat-icon>
-  </a>
+  <div class="jb-header__toolbar__actions">
+    <a
+      *ngFor="let item of languagesItem"
+      mat-icon-button
+      href="{{ item.route }}"
+      [attr.aria-label]="item.ariaLabel"
+      matTooltip="{{ item.ariaLabel }}"
+    >
+      <img src="{{ item.image.value }}" alt="" />
+    </a>
+    <a
+      mat-icon-button
+      href="assets/CV-Jordan-Bordonado.pdf"
+      download="CV-Jordan-Bordonado.pdf"
+      matTooltip="Download Jordan BORDONADO resume"
+      class="jb-header__toolbar__actions__download"
+      aria-label="Download Jordan BORDONADO resume"
+      i18n-matTooltip
+      i18n-aria-label
+    >
+      <mat-icon>save_alt</mat-icon>
+    </a>
+  </div>
 </mat-toolbar>

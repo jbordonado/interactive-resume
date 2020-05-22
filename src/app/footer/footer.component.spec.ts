@@ -1,8 +1,8 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { PROFILE } from '../shared/mock-profiles';
-import { ProfileService } from '../shared/profile.service';
-import { ScrollService } from '../shared/scroll.service';
+import { PROFILE } from '../app.constants';
+import { ProfileService } from '../services/profile.service';
+import { ScrollService } from '../services/scroll.service';
 import { FooterComponent } from './footer.component';
 
 describe('FooterComponent', () => {

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { SKILLS } from './mock-skills';
-import { Skills } from './skills.model';
+import { SKILLS } from '../app.constants';
+import { Skills } from '../interface/skills.model';
 
 @Injectable({
   providedIn: 'root',

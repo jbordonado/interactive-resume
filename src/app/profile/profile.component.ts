@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { WorkExperience } from '../shared/experience.model';
-import { ExperienceService } from '../shared/experience.service';
-import { Profile } from '../shared/profile.model';
-import { ProfileService } from '../shared/profile.service';
+import { WorkExperience } from '../interface/experience.model';
+import { Profile } from '../interface/profile.model';
+import { ExperienceService } from '../services/experience.service';
+import { ProfileService } from '../services/profile.service';
 
 @Component({
   selector: 'jb-profile',

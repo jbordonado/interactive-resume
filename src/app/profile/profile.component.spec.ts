@@ -1,9 +1,9 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { WorkExperience } from '../shared/experience.model';
-import { ExperienceService } from '../shared/experience.service';
-import { Profile } from '../shared/profile.model';
-import { ProfileService } from '../shared/profile.service';
+import { WorkExperience } from '../interface/experience.model';
+import { Profile } from '../interface/profile.model';
+import { ExperienceService } from '../services/experience.service';
+import { ProfileService } from '../services/profile.service';
 import { ProfileComponent } from './profile.component';
 
 describe('ProfileComponent', () => {
