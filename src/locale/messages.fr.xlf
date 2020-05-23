@@ -146,30 +146,6 @@
           <context context-type="linenumber">1</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="1568088f4bd5fd3158981e52d63dd073f0cbb0bd" datatype="html">
-        <source>
-    Since I graduated, I&apos;ve only known Air France but this is truly a great
-    environment to improve and meet amazing people in an outstanding place
-    (Sophia-Antipolis is called the &apos;Small Silicon Valley&apos;).
-  </source>
-        <target>Depuis que je suis diplômé, je n'ai connu qu'Air France mais c'est véritablement un bon environnement pour progresser et rencontrer des personnes extraordinaires dans un lieu exceptionnel (Sophia-Antipolis est appelée la petite Silicon Valley).</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/career/career.component.html</context>
-          <context context-type="linenumber">4</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="a3b3ded348f1bf9241bf5aa66b6ad5ce8f87206b" datatype="html">
-        <source>
-    I&apos;m also glad I&apos;ve had the chance to work at Amadeus just before, because
-    this is what gave me the confidence to continue on this path and especially
-    in the airline industry.
-  </source>
-        <target>Je suis également content d'avoir eu la chance de travailler à Amadeus juste avant, car c'est ce qui m'a donné confiance pour continuer dans cette voie et surtout dans l'industrie de l'aérien.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/career/career.component.html</context>
-          <context context-type="linenumber">9</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="199f59566005800eca93733b4728b24be3ad971a" datatype="html">
         <source>Now</source>
         <target>Aujourd'hui</target>
@@ -184,20 +160,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/certifications/certifications.component.html</context>
           <context context-type="linenumber">1</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="e5eeef4e840a70212c7307e65635eb99a56812e0" datatype="html">
-        <source>
-  Most of them come from a period of time where I was very interested about Big
-  Data which was the buzzword back then. That&apos;s how I learned Scala and found
-  out about functionnal programming (I only knew of Object-oriented programming
-  at that time), which was a blessing considering that I&apos;m using a lot of these
-  concepts at my current company.
-</source>
-        <target>La plupart ont été passées durant une période où j'étais très intéressé par le Big Data qui était le mot à la mode à l'époque. C'est comme cela que j'ai appris Scala et découvert la programmation fonctionnelle (je ne connaissais alors que la programmation orientée objet), ce qui fut une chance étant donné que je retrouve beaucoup de ces concepts dans mon rôle aujourd'hui.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/certifications/certifications.component.html</context>
-          <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
       <trans-unit id="13034c3cea46a2a195e60cb22b1c44cec8f83f14" datatype="html">
