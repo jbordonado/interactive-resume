@@ -47,14 +47,15 @@ describe('ProfileComponent', () => {
       };
       spyOn(profileService, 'getProfile').and.returnValue(fakeProfile);
 
+      const convenientStartDate = new Date();
+      convenientStartDate.setFullYear(convenientStartDate.getFullYear() - 1);
       const fakeExperiences: WorkExperience[] = [
         {
           companyName: 'Air France',
           companyLogo: 'af-logo.png',
           jobTitle: $localize`Front-end developer (Scalian Contractor)`,
           location: 'Sophia Antipolis (France)',
-          startDate: new Date(2017, 0),
-          endDate: new Date(2018, 7),
+          startDate: convenientStartDate,
           description: {
             objective: $localize`Development and maintenance of booking flows (standard / unaccompanied minor / ...) for Air France website (www.airfrance.fr)`,
             comments: [

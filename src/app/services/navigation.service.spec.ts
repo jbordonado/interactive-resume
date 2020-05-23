@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import { SECTION_ITEMS } from '../app.constants';
+import { LANGUAGE_ITEMS, SECTION_ITEMS } from '../app.constants';
 import { NavigationService } from './navigation.service';
 
 describe('NavigationService', () => {
@@ -10,11 +10,19 @@ describe('NavigationService', () => {
     service = TestBed.inject(NavigationService);
   });
 
-  describe('getNavigationItems', () => {
-    it('should return the navigation items', () => {
-      const navigationItems = service.getSectionItems();
+  describe('getSectionItems', () => {
+    it('should return the section items defined as a constant', () => {
+      const sectionItems = service.getSectionItems();
 
-      expect(navigationItems).toEqual(SECTION_ITEMS);
+      expect(sectionItems).toEqual(SECTION_ITEMS);
+    });
+  });
+
+  describe('getLanguageItems', () => {
+    it('should return the language items defined as a constant', () => {
+      const languageItems = service.getLanguageItems();
+
+      expect(languageItems).toEqual(LANGUAGE_ITEMS);
     });
   });
 });
