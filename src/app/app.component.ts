@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { ScrollService } from './services/scroll.service';
@@ -13,9 +14,14 @@ export class AppComponent implements OnInit, OnDestroy {
 
   private destroy$ = new Subject();
 
-  constructor(private scrollService: ScrollService) {}
+  constructor(
+    private titleService: Title,
+    private meta: Meta,
+    private scrollService: ScrollService
+  ) {}
 
   ngOnInit(): void {
+    this.updateSiteData();
     this.scrollService
       .getScroll()
       .pipe(takeUntil(this.destroy$))
@@ -23,6 +29,18 @@ export class AppComponent implements OnInit, OnDestroy {
       .subscribe((_state) => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
+  }
+
+  private updateSiteData(): void {
+    this.titleService.setTitle($localize`Jordan BORDONADO resume`);
+    this.meta.updateTag({
+      name: 'Description',
+      content: $localize`Resume of a fullstack engineer with 3 years of experience working in Sophia Antipolis (France).`,
+    });
+    this.meta.updateTag({
+      name: 'keywords',
+      content: $localize`personal website, resume, interactive resume, engineer, fullstack, sophia-antipolis, developer`,
+    });
   }
 
   public toggleSidebar(): void {

@@ -46,7 +46,7 @@ export class SidenavComponent implements OnInit, OnChanges {
 
   public onNavClick(sectionItem: NavigationItem): void {
     this.titleService.setTitle(
-      `Jordan BORDONADO interactive resume - ${sectionItem.name}`
+      $localize`Jordan BORDONADO resume - ${sectionItem.name}`
     );
     this.closeSidenav();
   }

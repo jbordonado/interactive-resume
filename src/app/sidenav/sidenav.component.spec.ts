@@ -98,7 +98,7 @@ describe('SidenavComponent', () => {
       component.onNavClick(navItem);
 
       expect(titleService.setTitle).toHaveBeenCalledWith(
-        'Jordan BORDONADO interactive resume - aNameRandom'
+        'Jordan BORDONADO resume - aNameRandom'
       );
     });
   });
