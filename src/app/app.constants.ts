@@ -311,7 +311,7 @@ export const CERTIFICATES: Certificate[] = [
       'https://www.coursera.org/account/accomplishments/verify/CBNF9HJGDC3G',
   },
   {
-    name: 'Functionnal Program Design in Scala',
+    name: 'Functional Program Design in Scala',
     authorityLogo: 'coursera-logo.png',
     authorityName: 'Coursera',
     issuingDate: new Date(2017, 7),
@@ -319,7 +319,7 @@ export const CERTIFICATES: Certificate[] = [
       'https://www.coursera.org/account/accomplishments/verify/HJKYLLPASAMP',
   },
   {
-    name: 'Functionnal Programming Principles in Scala',
+    name: 'Functional Programming Principles in Scala',
     authorityLogo: 'coursera-logo.png',
     authorityName: 'Coursera',
     issuingDate: new Date(2017, 7),

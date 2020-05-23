@@ -74,7 +74,7 @@
     I have a lot of passion for development and I like clean code, fairly tested
     and easy to read so I try to set high expectations for myself.
   </source>
-      <target>J'ai beaucoup de passion pour le développement et j'aime le code propre, testé correctement et facile à lire donc j'essaie de me fixer personnellement des attentes élevées.</target>
+      <target>J'ai beaucoup de passion pour le développement et j'aime le code bien structuré, testé correctement et facile à lire donc j'essaie de me fixer des attentes élevées.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/resume/resume.component.html</context>
           <context context-type="linenumber">8</context>
@@ -85,7 +85,7 @@
     Feel free to dig through the different sections of the site to get to know
     me.
   </source>
-        <target>N'hésitezpas à naviguer à travers les différentes sections du site pour mieux me connaître.</target>
+        <target>N'hésitez pas à naviguer à travers les différentes sections du site pour mieux me connaître.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/resume/resume.component.html</context>
           <context context-type="linenumber">13</context>
@@ -180,11 +180,15 @@
       </trans-unit>
       <trans-unit id="4c46f52d86c3f0fe12511e3935d6de90f316a645" datatype="html">
         <source>
-  Generally speaking, I am eager to learn and I try to go deep on the various
-  topics I deal with. Besides, I always try to keep a positive attitude in a
-  team, which means positive feedback and support at any time.
-</source>
-        <target>De manière général, je suis désireux d'apprendre et j'essaie d'aller au bout des choses sur les différentes sujets que je traite. De plus, j'essaie toujours de garder une attitude positive au sein de l'équipe, ce qui signifie du feedbacks positifs et du support à tout moment.</target>
+        Generally speaking, I am eager to learn and I try to go deep on the various
+        topics I deal with. Besides, I always try to keep a positive attitude in a
+        team, which means positive feedback and support at any time.
+      </source>
+        <target>De manière général, je suis désireux d'apprendre et j'essaie d'aller au bout des
+        choses sur les différents sujets que je traite.
+        De plus, j'essaie toujours de garder une attitude positive au sein de l'équipe,
+        ce qui signifie du feedback positif et du support à tout moment.
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/skills/skills.component.html</context>
           <context context-type="linenumber">3</context>
@@ -211,7 +215,7 @@
       <trans-unit id="027071c25eb58dbd6a7c9d53fe105cd6eab331cc" datatype="html">
         <source>I want to learn mandarin and I started to work on that a while
     ago!</source>
-        <target>Je veux apprendre le mandarin et j'ai commencé à travailler sur cela il y a déjà un certain moment.</target>
+        <target>Je veux apprendre le mandarin et j'ai commencé à travailler sur cela il y a déjà plusieurs mois.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/bonus/bonus.component.html</context>
           <context context-type="linenumber">15</context>
@@ -297,7 +301,7 @@
     well under pressure.
         </source>
         <target>J'apprécie les challenges et les tâches difficiles et je suis capable de
-        travailler efficacement sous la pression
+        travailler efficacement sous la pression.
         </target>
       </trans-unit>
       <trans-unit id="5788848768936722532">
@@ -308,13 +312,13 @@
         </source>
         <target>Je m'intègre également très bien dans une équipe car je m'adapte et
         j'apprends rapidement dans un nouvel environnement, je prends toujours le temps
-        de donner des conseils ou de l'aide à mes collègues et j'adore recevoir du feedback sur
-        mon travail and essayer d'améliorer mes connaissances.
+        de donner des conseils ou de l'aide à mes collègues quand ils en ont besoin et j'adore recevoir du feedback sur
+        mon travail pour essayer de m'améliorer.
         </target>
       </trans-unit>
       <trans-unit id="3854994952528488721">
         <source>Engineer in Applied Mathematics and Modelling</source>
-        <target>Ingénieur en Mathématiques Appliquées et Modélsiation</target>
+        <target>Ingénieur en Mathématiques Appliquées et Modélisation</target>
       </trans-unit>
       <trans-unit id="676831741944749930">
         <source>Specialized in mathematics and computer science applied to finance.</source>
@@ -346,7 +350,7 @@
         for Air France / KLM joint booking website
         </source>
         <target>Développement et maintenance des flows de disruption
-        (création et suivi de plaintes, statut des vols, déclaration de baggage manquant)
+        (création et suivi de plaintes, statut des vols, déclaration de baggage perdu)
         pour le site de vente de billets Air France / KLM
         </target>
       </trans-unit>
@@ -367,7 +371,7 @@
         as well as communication to follow the rapid pace of the project.
         </source>
         <target>Ainsi, cela demande des compétences solides en développement (front-end / back-end)
-        et également en communication pour être à même de suivre le rythme effrené du projet.
+        et également en communication pour être à même de suivre le rythme effréné du projet.
         </target>
       </trans-unit>
       <trans-unit id="5405138480962896101">
@@ -396,7 +400,7 @@
         <source>Overall, I had the same kind of responsabilities than in my previous role,
         except that it was now for the mobile website.
         </source>
-        <target>Dans l'ensemble, j'avais les mêmes réponsabilités que dans mon rôle précédant,
+        <target>Dans l'ensemble, j'avais les mêmes responsabilités que dans mon rôle précédant,
         à part qu'il s'agissait cette fois du site mobile.
         </target>
       </trans-unit>
@@ -427,7 +431,7 @@
         with loss of functional knowledge over the years.
         </source>
         <target>Ce projet a demandé une forte autonomie car il s'agit d'un vieux projet
-        qui a connu de nombreux départs depuis sa création, provoquant une perte de
+        ayant connu de nombreux départs depuis sa création, provoquant une perte de
         connaissance fonctionnelle précieuse au fil du temps.
         </target>
       </trans-unit>
@@ -436,7 +440,7 @@
         it also taught me a lot about cautiousness and how to deal with big projects
         with a high traffic and income while it has a lot of dependencies.
         </source>
-        <target>A part l'expérience au niveau technique que j'ai pu développer grâce à ce rôle, cela
+        <target>A part l'expérience au niveau technique que j'ai pu prendre grâce à ce rôle, cela
         m'a également appris à développer avec prudence et rigueur, et cela m'a donné un clair aperçu
         de la gestion d'un gros projet avec un fort trafic et revenu alors qu'il contient de nombreuses dépendances
         avec des applications tierces.
@@ -445,11 +449,11 @@
       <trans-unit id="4194064517810933749">
         <source>After a few months, I took on more responsabilities and was an essential
         part of technical and organizational decisions in the team
-        (architecture, git flow, code review, newcomers training, documentation setup, ...)
+        (architecture, git flow, code review, newcomers training, documentation setup, ...).
         </source>
-        <target>Après quelques mois, j'ai pris plus de responsabilités et j'étais un élement essentiel
+        <target>Après quelques mois, j'ai pris plus de responsabilités et j'étais devenu un élement essentiel
         des processus de décisions techniques et organisationnelles au sein de l'équipe
-        (architecture, git flow, code review, formation des nouveaux arrivants, mise en place de documentations, ...)
+        (architecture, git flow, code review, formation des nouveaux arrivants, mise en place de documentations, ...).
         </target>
       </trans-unit>
       <trans-unit id="1995546168874101187">
@@ -457,21 +461,22 @@
         <target>Apprentissage - Développeur Fullstack</target>
       </trans-unit>
       <trans-unit id="1787912500355690011">
-        <source>Creation of an Internet Booking Engine prototype that will be used as
+        <source>Creation of an Internet Booking Engine prototype to be used as
         an internal tool to showcase the eRetail XML API to airline customers
         (data setup, request/response samples, steps to follow, ...)
         </source>
-        <target>Création d'un prototype de moteur de réservation qui sera utilisé comme un outil
-        interne pour démontrer l'utilisation de l'API eRetail XML aux compagnies aériennes clientes
+        <target>Création d'un prototype de moteur de réservation pour être utilisé comme un outil
+        interne afin de démontrer l'utilisation de l'API eRetail XML aux compagnies aériennes clientes
         (configurations techniques en prérequis, échantillon de requêtes/réponses, étapes à suivre, ...)
         </target>
       </trans-unit>
       <trans-unit id="4994314912696636622">
         <source>First, it taught me all the basics of an airline booking flow and the
-        technical terms along that so at that point it was already a big win for me.
+        technical terms along that so at that point it was already a big win on a functional perspective.
         </source>
         <target>D'abord, cela m'a appris toutes les connaissances de base sur un flow de réservation
-        d'une compagnie aérienne et le jargon technique associé donc cela était déjà une belle réussite pour moi.
+        d'une compagnie aérienne et le jargon technique associé donc cela était déjà une belle réussite
+        sur un plan fonctionnel.
         </target>
       </trans-unit>
       <trans-unit id="2561233381523780449">
@@ -481,7 +486,7 @@
         </source>
         <target>Ensuite, j'avais beaucoup d'autonomie car je faisais partie d'une équipe composée
         uniquement d'analyste fonctionnel, donc j'ai dû apprendre beaucoup par moi-même et aiguiser
-        mon esprit afin d'être capable de faire les choix techniques et design qui sont les plus
+        mon esprit afin d'être capable de faire les choix techniques et de design qui sont les plus
         justes et adaptés.
         </target>
       </trans-unit>
@@ -520,7 +525,7 @@
         <source>Implementation of the Cucker-Smale mathematical model, based on the construction
         and analysis of a generic flocking model.
         </source>
-        <target>Implémentation du modèle mathématiques de Cucker-Smale, basé sur la construction et
+        <target>Implémentation du modèle mathématique de Cucker-Smale, basé sur la construction et
         l'analyse d'un modèle générique sur le comportement de groupe d'oiseaux.</target>
       </trans-unit>
       <trans-unit id="5510577902789547988">
@@ -528,9 +533,9 @@
         the application fields and the parameters, which eventually made me better at understanding
         such complicated scientific papers.
         </source>
-        <target>D'abord, pour l'analyse du modèle, j'ai lu beaucoup de papiers scientifiques décrivant
+        <target>D'abord, pour l'analyse du modèle, j'ai lu beaucoup d'articles scientifiques décrivant
         les domaines d'applications et les paramètres, ce qui m'a permis d'améliorer mes capacités
-        à comprendre des articles scientifiques décrivant des concepts compliqués.
+        à comprendre des articles scientifiques détaillant des concepts compliqués.
         </target>
       </trans-unit>
       <trans-unit id="4716710438799082428">
@@ -559,7 +564,7 @@
         employees' needs and have a global view of the current limitations of their forms.
         </source>
         <target>J'ai d'abord pris part à deux missions sur le terrain avec un agent afin de comprendre
-        les besoins techniques et fonctionnelles des agents et avoir une vision globale des
+        leurs besoins techniques et fonctionnelles et avoir une vision globale des
         limitations actuelles des formulaires.
         </target>
       </trans-unit>
