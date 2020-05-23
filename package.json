@@ -8,10 +8,12 @@
     "build-i18n": "ng build --prod --localize",
     "copy-redirects": "cp ./src/_redirects ./dist/interactive-resume",
     "dev": "lite-server --baseDir='dist/interactive-resume'",
+    "http-server": "http-server -p 8080 -c-1 dist/interactive-resume",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "eslint": "eslint --fix 'src/**/*.{ts, html, scss}'",
+    "dev-sw": "ng build --prod && npm run http-server",
     "deploy": "npm run test && npm run build-i18n && npm run copy-redirects"
   },
   "private": true,
@@ -27,6 +29,8 @@
     "@angular/platform-browser": "~9.0.2",
     "@angular/platform-browser-dynamic": "~9.0.2",
     "@angular/router": "~9.0.2",
+    "@angular/service-worker": "~9.0.2",
+    "http-server": "^0.12.3",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
