@@ -22,17 +22,6 @@
     }
 
     &__actions {
-      > a {
-        @include very-small {
-          width: max-content;
-        }
-      }
-      > a:not(:first-child) {
-        @include very-small {
-          padding-left: 8px;
-        }
-      }
-
       &__download {
         transition: all 0.2s ease-in-out;
 

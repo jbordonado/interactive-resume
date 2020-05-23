@@ -1,4 +1,4 @@
-<mat-toolbar color="primary" class="jb-header__toolbar">
+<mat-toolbar color="primary" class="jb-header__toolbar mat-typography">
   <button
     mat-icon-button
     matTooltip="Open sidebar menu"
@@ -14,9 +14,11 @@
     mat-button
     routerLink="/"
     (click)="onTitleClick()"
-    class="jb-header__toolbar__title"
+    class="jb-header__toolbar__title jb-header__toolbar__title"
+    aria-label="Navigate to the home page"
+    i18n-aria-label
   >
-    <h1 i18n>Interactive resume</h1>
+    <h1 class="mat-h1" i18n>Resume</h1>
   </a>
   <div class="jb-header__toolbar__actions">
     <a

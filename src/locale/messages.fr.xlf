@@ -14,9 +14,9 @@
           <context context-type="linenumber">6</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="cac6b83b68eb8d269f36e5ef1fec23c3d837aa25" datatype="html">
-        <source>Interactive resume</source>
-        <target>CV interactif</target>
+      <trans-unit id="4cd979821c89535df23df1c8ac8f260673610d90" datatype="html">
+        <source>Resume</source>
+        <target>CV</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/header/header.component.html</context>
           <context context-type="linenumber">13</context>
@@ -639,6 +639,10 @@
       <trans-unit id="5243200687670447891">
         <source>Navigate to english version</source>
         <target>Naviguer vers la version anglaise</target>
+      </trans-unit>
+      <trans-unit id="3e027d06ff9c0a6bb4bcdd8717eef863bf3e08a4">
+        <source>Navigate to the home page</source>
+        <target>Naviguer vers la page d'accueil</target>
       </trans-unit>
     </body>
   </file>
