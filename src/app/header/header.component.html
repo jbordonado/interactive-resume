@@ -28,7 +28,12 @@
       [attr.aria-label]="item.ariaLabel"
       [matTooltip]="item.ariaLabel"
     >
-      <img [src]="item.image.value" [alt]="item.name" />
+      <img
+        [src]="item.image.value"
+        width="16px"
+        height="16px"
+        [alt]="item.name"
+      />
     </a>
     <a
       mat-icon-button
