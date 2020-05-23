@@ -29,12 +29,6 @@
         align-items: center;
         padding: 4px 0;
 
-        @include very-small {
-          flex-direction: column;
-          align-items: center;
-          width: max-content;
-        }
-
         > * {
           vertical-align: middle;
         }
@@ -44,9 +38,6 @@
         }
 
         > :last-child {
-          @include very-small {
-            margin-left: 0;
-          }
           margin-left: 4px;
         }
 
@@ -54,11 +45,6 @@
           width: 40px;
           height: 1px;
           background: black;
-
-          @include very-small {
-            transform: rotate(90deg);
-            margin: 20px 0;
-          }
         }
       }
 
