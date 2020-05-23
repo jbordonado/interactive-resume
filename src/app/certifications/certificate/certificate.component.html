@@ -3,7 +3,7 @@
     <img
       width="100px"
       height="50px"
-      src="assets/{{ certificate.authorityLogo }}"
+      [src]="'assets/' + certificate.authorityLogo"
       alt=""
       class="jb-certificate__card__content__image"
     />
@@ -22,7 +22,7 @@
 
   <div *ngIf="certificate.link" class="jb-certificate__card__link">
     <a
-      href="{{ certificate.link }}"
+      [href]="certificate.link"
       mat-button
       color="primary"
       target="_blank"

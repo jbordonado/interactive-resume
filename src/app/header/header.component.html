@@ -12,7 +12,7 @@
   </button>
   <a
     mat-button
-    routerLink="{{ homeNavigationItem.route }}"
+    [routerLink]="homeNavigationItem.route"
     (click)="onTitleClick()"
     class="jb-header__toolbar__title jb-header__toolbar__title"
     aria-label="Navigate to the home page"
@@ -24,11 +24,16 @@
     <a
       *ngFor="let item of languagesItem"
       mat-icon-button
-      href="{{ item.route }}"
+      [href]="item.route"
       [attr.aria-label]="item.ariaLabel"
-      matTooltip="{{ item.ariaLabel }}"
+      [matTooltip]="item.ariaLabel"
     >
-      <img src="{{ item.image.value }}" alt="" />
+      <img
+        [src]="item.image.value"
+        width="16px"
+        height="16px"
+        [alt]="item.name"
+      />
     </a>
     <a
       mat-icon-button

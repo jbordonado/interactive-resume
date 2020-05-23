@@ -1,7 +1,7 @@
 <mat-sidenav-container (backdropClick)="closeSidenav()" class="jb-sidenav">
   <mat-sidenav
-    [fixedInViewport]="'true'"
-    [mode]="'over'"
+    fixedInViewport="true"
+    mode="over"
     [opened]="isOpen"
     role="navigation"
   >
@@ -13,7 +13,9 @@
           (click)="onNavClick(section)"
           [routerLink]="section.route"
         >
-          <mat-icon matListIcon>{{ section.image.value }}</mat-icon
+          <mat-icon matListIcon aria-hidden="true">{{
+            section.image.value
+          }}</mat-icon
           ><span class="jb-sidenav__nav-links__text">{{ section.name }}</span>
         </a>
         <ng-template #imageSectionItem>
@@ -23,8 +25,11 @@
             [routerLink]="section.route"
           >
             <img
+              [src]="section.image.value"
+              width="24px"
+              height="24px"
               class="jb-sidenav__nav-links__icon"
-              src="{{ section.image.value }}"
+              aria-hidden="true"
             />
             <span class="jb-sidenav__nav-links__text">{{ section.name }}</span>
           </a>

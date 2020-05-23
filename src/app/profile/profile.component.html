@@ -5,7 +5,9 @@
     <div class="jb-profile__card__header__main">
       <img
         mat-card-sm-image
-        src="{{ profile.image }}"
+        [src]="profile.image"
+        width="80px"
+        height="80px"
         alt=""
         class="jb-profile__card__header__main__image"
       />
@@ -31,7 +33,7 @@
     <ng-container *ngFor="let contact of profile.contactDetails">
       <a
         mat-button
-        href="{{ contact.link }}"
+        [href]="contact.link"
         color="primary"
         target="_blank"
         rel="noopener noreferrer"
