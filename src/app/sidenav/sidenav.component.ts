@@ -7,7 +7,6 @@ import {
   Output,
   SimpleChanges,
 } from '@angular/core';
-import { Title } from '@angular/platform-browser';
 import { NavigationItem } from '../interface/navigation.model';
 import { NavigationService } from '../services/navigation.service';
 import { ScrollService } from '../services/scroll.service';
@@ -27,7 +26,6 @@ export class SidenavComponent implements OnInit, OnChanges {
 
   constructor(
     private navigationService: NavigationService,
-    private titleService: Title,
     private scrollService: ScrollService
   ) {}
 
@@ -44,10 +42,7 @@ export class SidenavComponent implements OnInit, OnChanges {
     return sectionItem.image.type === 'icon';
   }
 
-  public onNavClick(sectionItem: NavigationItem): void {
-    this.titleService.setTitle(
-      $localize`Jordan BORDONADO resume - ${sectionItem.name}`
-    );
+  public onNavClick(): void {
     this.closeSidenav();
   }
 

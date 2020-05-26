@@ -103,7 +103,7 @@ export const PROFILE: Profile = {
     {
       touchpoint: 'LinkedIn',
       link: 'https://www.linkedin.com/in/jbordonado',
-      image: 'assets/linkedin-logo.png',
+      image: 'assets/in-logo.png',
       ariaLabel: `Jordan Bordonado LinkedIn`,
     },
     {

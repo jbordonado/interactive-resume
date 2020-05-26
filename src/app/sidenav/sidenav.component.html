@@ -10,7 +10,7 @@
         <a
           *ngIf="isIcon(section); else imageSectionItem"
           mat-list-item
-          (click)="onNavClick(section)"
+          (click)="onNavClick()"
           [routerLink]="section.route"
         >
           <mat-icon matListIcon aria-hidden="true">{{
@@ -19,11 +19,7 @@
           ><span class="jb-sidenav__nav-links__text">{{ section.name }}</span>
         </a>
         <ng-template #imageSectionItem>
-          <a
-            mat-list-item
-            (click)="onNavClick(section)"
-            [routerLink]="section.route"
-          >
+          <a mat-list-item (click)="onNavClick()" [routerLink]="section.route">
             <img
               [src]="section.image.value"
               width="24px"

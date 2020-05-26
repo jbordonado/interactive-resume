@@ -6,13 +6,13 @@
     "start": "ng serve",
     "build": "ng build",
     "build-i18n": "ng build --prod --localize",
-    "copy-redirects": "cp ./src/_redirects ./dist/interactive-resume",
+    "copy-root": "cp ./src/_redirects ./dist/interactive-resume && cp ./src/sitemap.xml ./dist/interactive-resume && cp ./src/robots.txt ./dist/interactive-resume",
     "dev": "lite-server --baseDir='dist/interactive-resume'",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "eslint": "eslint --fix 'src/**/*.{ts, html, scss}'",
-    "deploy": "npm run test && npm run build-i18n && npm run copy-redirects"
+    "deploy": "npm run test && npm run build-i18n && npm run copy-root"
   },
   "private": true,
   "dependencies": {

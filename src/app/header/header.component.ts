@@ -1,5 +1,4 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { Title } from '@angular/platform-browser';
 import { NavigationItem } from '../interface/navigation.model';
 import { NavigationService } from '../services/navigation.service';
 import { ScrollService } from '../services/scroll.service';
@@ -17,8 +16,7 @@ export class HeaderComponent implements OnInit {
 
   constructor(
     private navigationService: NavigationService,
-    private scrollService: ScrollService,
-    private titleService: Title
+    private scrollService: ScrollService
   ) {}
 
   ngOnInit(): void {
@@ -34,8 +32,5 @@ export class HeaderComponent implements OnInit {
 
   public onTitleClick(): void {
     this.scrollService.scrollToTop();
-    this.titleService.setTitle(
-      $localize`Jordan BORDONADO resume - ${this.homeNavigationItem.name}`
-    );
   }
 }

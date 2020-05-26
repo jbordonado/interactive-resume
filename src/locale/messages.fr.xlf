@@ -611,17 +611,13 @@
         <source>Navigate to the home page</source>
         <target>Naviguer vers la page d'accueil</target>
       </trans-unit>
-      <trans-unit id="1753382622199526899">
-        <source>Jordan BORDONADO resume - <x id="PH" equiv-text="{{ sectionItem.name }}"/></source>
-        <target>CV de Jordan BORDONADO - <x id="PH" equiv-text="{{ sectionItem.name }}"/></target>
+      <trans-unit id="737716943089423242">
+        <source>I'm Jordan BORDONADO, an experienced engineer in web development working in Sophia-Antipolis (France).</source>
+        <target>Je suis Jordan BORDONADO, un ingénieur expérimenté en développement web travaillant à Sophia-Antipolis (France).</target>
       </trans-unit>
-      <trans-unit id="9084617823218563882">
-        <source>Resume of a fullstack engineer with 3 years of experience working in Sophia Antipolis (France).</source>
-        <target>CV d'un ingénieur développeur fullstack avec 3 années d'expériences et travaillant à Sophia-Antipolis (France).</target>
-      </trans-unit>
-      <trans-unit id="2028397730939366677">
-        <source>personal website, resume, interactive resume, engineer, fullstack, sophia-antipolis, developer</source>
-        <target>site personnel, cv, cv interactif, ingénieur, fullstack, sophia-antipolis, développeur</target>
+      <trans-unit id="5049929191019706897">
+        <source>personal website, resume, interactive resume, engineer, fullstack, sophia-antipolis, developer, web developer</source>
+        <target>site personnel, cv, cv interactif, ingénieur, fullstack, sophia-antipolis, développeur, développeur web</target>
       </trans-unit>
       <trans-unit id="1123817680586529821">
         <source>Jordan BORDONADO resume</source>

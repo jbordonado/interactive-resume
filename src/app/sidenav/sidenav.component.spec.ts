@@ -1,6 +1,5 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { Title } from '@angular/platform-browser';
 import { RouterTestingModule } from '@angular/router/testing';
 import { SECTION_ITEMS } from '../app.constants';
 import { NavigationItem } from '../interface/navigation.model';
@@ -13,7 +12,6 @@ describe('SidenavComponent', () => {
   let fixture: ComponentFixture<SidenavComponent>;
 
   let navigationService: NavigationService;
-  let titleService: Title;
   let scrollService: ScrollService;
 
   beforeEach(async(() => {
@@ -83,23 +81,12 @@ describe('SidenavComponent', () => {
   });
 
   describe('onNavClick', () => {
-    it(`should use title service to set a title using the navigation item's name`, () => {
-      titleService = TestBed.inject(Title);
-      spyOn(titleService, 'setTitle');
-      const navItem: NavigationItem = {
-        name: 'aNameRandom',
-        route: '/',
-        image: {
-          type: 'img',
-          value: 'assets/home_outline.svg',
-        },
-      };
+    it(`should call closeSidenav method`, () => {
+      spyOn(component, 'closeSidenav');
 
-      component.onNavClick(navItem);
+      component.onNavClick();
 
-      expect(titleService.setTitle).toHaveBeenCalledWith(
-        'Jordan BORDONADO resume - aNameRandom'
-      );
+      expect(component.closeSidenav).toHaveBeenCalled();
     });
   });
 

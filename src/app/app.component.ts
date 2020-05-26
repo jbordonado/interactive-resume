@@ -35,11 +35,11 @@ export class AppComponent implements OnInit, OnDestroy {
     this.titleService.setTitle($localize`Jordan BORDONADO resume`);
     this.meta.updateTag({
       name: 'Description',
-      content: $localize`Resume of a fullstack engineer with 3 years of experience working in Sophia Antipolis (France).`,
+      content: $localize`I'm Jordan BORDONADO, an experienced engineer in web development working in Sophia-Antipolis (France).`,
     });
     this.meta.updateTag({
       name: 'keywords',
-      content: $localize`personal website, resume, interactive resume, engineer, fullstack, sophia-antipolis, developer`,
+      content: $localize`personal website, resume, interactive resume, engineer, fullstack, sophia-antipolis, developer, web developer`,
     });
   }
 

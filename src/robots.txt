@@ -1,4 +1,6 @@
-# Allow all URLs (see http://www.robotstxt.org/robotstxt.html)
 User-agent: *
-Disallow:
+Disallow: /
+Allow: /$
+Allow: /en/$
+Allow: /fr/$
 Sitemap: https://www.jordanbordonado.com/sitemap.xml

@@ -1,7 +1,6 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { Title } from '@angular/platform-browser';
 import { RouterTestingModule } from '@angular/router/testing';
 import { LANGUAGE_ITEMS, SECTION_ITEMS } from '../app.constants';
 import { NavigationService } from '../services/navigation.service';
@@ -12,7 +11,6 @@ describe('HeaderComponent', () => {
   let component: HeaderComponent;
   let fixture: ComponentFixture<HeaderComponent>;
 
-  let titleService: Title;
   let navigationService: NavigationService;
   let scrollService: ScrollService;
 
@@ -57,16 +55,11 @@ describe('HeaderComponent', () => {
   describe('onTitleClick', () => {
     it('should call scrolLToTop from scroll service', () => {
       component.homeNavigationItem = SECTION_ITEMS[0];
-      titleService = TestBed.inject(Title);
-      spyOn(titleService, 'setTitle');
       scrollService = TestBed.inject(ScrollService);
       spyOn(scrollService, 'scrollToTop');
 
       component.onTitleClick();
 
-      expect(titleService.setTitle).toHaveBeenCalledWith(
-        $localize`Jordan BORDONADO resume - Home`
-      );
       expect(scrollService.scrollToTop).toHaveBeenCalled();
     });
   });

@@ -22,6 +22,7 @@
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true,
     "noImplicitAny": true,
-    "suppressImplicitAnyIndexErrors": true
+    "suppressImplicitAnyIndexErrors": true,
+    "strictTemplates": true
   }
 }
