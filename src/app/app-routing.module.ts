@@ -1,5 +1,12 @@
 import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { Meta } from '@angular/platform-browser';
+import {
+  NavigationEnd,
+  PreloadAllModules,
+  Router,
+  RouterModule,
+  Routes,
+} from '@angular/router';
 import { ResumeComponent } from './resume/resume.component';
 
 const routes: Routes = [
@@ -46,4 +53,20 @@ const routes: Routes = [
   ],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule {
+  constructor(private router: Router, private meta: Meta) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        if (this.isHomePage()) {
+          this.meta.removeTag("name='robots'");
+        } else {
+          this.meta.addTag({ name: 'robots', content: 'noindex' });
+        }
+      }
+    });
+  }
+
+  private isHomePage(): boolean {
+    return this.router.url === '/';
+  }
+}
