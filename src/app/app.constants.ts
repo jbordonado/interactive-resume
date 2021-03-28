@@ -172,7 +172,7 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
         $localize`I adapted fast and was able to improve and refactor a lot of the project in my team's scope, putting a strong accent on the testing part.`,
       ],
       technologies: [
-        'Angular 9',
+        'Angular 11',
         'Typescript',
         'NodeJS 10',
         'Apollo GraphQL',

@@ -20,15 +20,5 @@
     &__title {
       flex-shrink: 0;
     }
-
-    &__actions {
-      &__download {
-        transition: all 0.2s ease-in-out;
-
-        :hover {
-          transform: scale(1.5);
-        }
-      }
-    }
   }
 }
